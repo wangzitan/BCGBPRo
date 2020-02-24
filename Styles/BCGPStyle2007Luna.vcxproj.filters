@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c2f67dc2-de1a-4f3f-aa89-673c981a00de}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4a66900f-f533-411f-ab53-d53883526941}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\AppCaption">
+      <UniqueIdentifier>{4d30b55d-9697-4846-aea1-6dcc2d499b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ComboBox">
+      <UniqueIdentifier>{7fa28a3c-bbe4-42f2-8e4c-32feb3215f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MainWnd">
+      <UniqueIdentifier>{7e5f4999-a35d-493f-8382-d24e54f83dc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MenuBar">
+      <UniqueIdentifier>{7820ce80-5897-4b05-b4ec-d815d718b744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PopupBar">
+      <UniqueIdentifier>{83e23f15-17d7-4c32-8036-50af669cf956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\StatusBar">
+      <UniqueIdentifier>{896814d9-3dc1-40b6-871c-867a3e2d7087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tab">
+      <UniqueIdentifier>{9f10f7ef-ebfc-4b9d-8690-5741e329b9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\TaskPane">
+      <UniqueIdentifier>{c9d83988-74c6-4e6e-bdbe-4d7403142b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ToolBar">
+      <UniqueIdentifier>{fea9b44e-c2e8-4120-bca9-e6dd0bb0f36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon">
+      <UniqueIdentifier>{39dce596-c976-43cc-8ec7-774a23bed563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Buttons">
+      <UniqueIdentifier>{9b338bbe-a5f6-4e08-8951-1893f6606427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context">
+      <UniqueIdentifier>{0320c0f7-bfe8-4b30-94bf-41bafdbb80b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Red">
+      <UniqueIdentifier>{8bd3aa8f-ec33-4655-9703-d095cb5e33c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Orange">
+      <UniqueIdentifier>{168bde00-3bb4-4d59-b041-5599247c46b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Yellow">
+      <UniqueIdentifier>{d9005e6f-056a-4557-8b08-2bf06d6e8ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Green">
+      <UniqueIdentifier>{0b961c2d-0382-4bc3-9804-e5de583e1f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Blue">
+      <UniqueIdentifier>{12ba033f-d2a1-4f42-a26a-2be461f125a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Indigo">
+      <UniqueIdentifier>{f7a040d1-24e6-4488-a380-4a755f1e3388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Violet">
+      <UniqueIdentifier>{1fcf507e-64df-4063-a37c-81621839e9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Slider">
+      <UniqueIdentifier>{267acc60-b3ec-4bea-b2d2-3b210fb5dc73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Progress">
+      <UniqueIdentifier>{0a469f27-fc14-4579-baff-9938c667d6a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Outlook">
+      <UniqueIdentifier>{5d34d3c9-8fc6-4991-88d2-e72619d021c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll">
+      <UniqueIdentifier>{a7118c6d-9f6b-460e-91a7-14f869e20a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Horz">
+      <UniqueIdentifier>{8cff52f0-3b52-4778-935d-cfc60dd86496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Vert">
+      <UniqueIdentifier>{826d48b3-331c-4a7c-9d0f-deaa1e83fe5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Slider No. 1">
+      <UniqueIdentifier>{6fefd8d0-f941-4340-96b2-924f121cf9c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Calculator">
+      <UniqueIdentifier>{ec3bf52d-f490-45b1-a226-e845ce85f497}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyle2007Luna.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Back.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Close.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Close_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Help.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Help_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Maximize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Maximize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Minimize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Minimize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Restore.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\AppCaption\SysBtn_Restore_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\ComboBox\Btn.png">
+      <Filter>Resource Files\ComboBox</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\MainWnd\Border.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\MainWnd\BorderCaption.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\MainWnd\BorderMDIChild.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\MenuBar\Btn.png">
+      <Filter>Resource Files\MenuBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Border.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Gripper.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Item_Back.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Item_Marker_C.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Item_Marker_R.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Item_Pin.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\MenuButton.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\MenuHighlight.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\MenuHighlightDisabled.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\MenuScrollBtn.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\ResizeBar.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\ResizeBar_HV.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\ResizeBar_HVT.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\ResizeBar_V.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\PopupBar\Tear.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\StatusBar\Back.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\StatusBar\Back_Ext.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\StatusBar\PaneBorder.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\StatusBar\SizeGrip.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Tab\3D.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Tab\Dot_E.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Tab\Dot_R.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Tab\Flat.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\TaskPane\ScrollBtn.png">
+      <Filter>Resource Files\TaskPane</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\ToolBar\Btn.png">
+      <Filter>Resource Files\ToolBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Check.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Default.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Default_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Default_Image.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Default_QAT.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Default_QAT_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Group.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Group_F.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Group_L.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Group_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Group_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_F_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_F_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_L_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_L_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_M_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\GroupMenu_M_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Launch.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Launch_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Main.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Main_Panel.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Menu_H_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Menu_H_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Menu_V_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Menu_V_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Normal_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Normal_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Page_L.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Page_R.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Palette_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Palette_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Palette_T.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Push.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\Radio.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Buttons\StatusPane.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Red\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Red\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Red\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Red\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Orange\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Orange\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Orange\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Orange\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Yellow\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Yellow\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Yellow\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Yellow\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Green\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Green\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Green\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Green\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Blue\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Blue\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Blue\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Blue\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Indigo\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Indigo\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Indigo\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Indigo\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Violet\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Violet\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Violet\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Violet\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Panel_Back_B.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Panel_Back_T.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Context\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Minus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Plus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb_H.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb_L.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb_R.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb_T.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Slider\Thumb_V.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Progress\Back.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Progress\Infinity.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Progress\Normal.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Progress\Normal_Ext.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Border_Floaty.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Border_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Caption_QA.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Caption_QA_Glass.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Back.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Tab.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Category_Tab_Sep.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\KeyTip.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Panel_Back_B.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Panel_Back_T.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Panel_Main.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Panel_Main_Border.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Panel_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Ribbon\Separator.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\OutlookWnd\BarBack.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\OutlookWnd\BtnPage.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\Back_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\Back_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\Item_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\Item_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\Thumb.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Horz\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\Back_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\Back_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\Item_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\Item_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\Thumb.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Scroll\Vert\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_B.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_H.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_L.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_R.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_T.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Slider\Thumb_V.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (luna - blue)\Calculator\Btn.PNG">
+      <Filter>Resource Files\Calculator</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Office 2007 (luna - blue)\Style.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyle2007Luna.rc2">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

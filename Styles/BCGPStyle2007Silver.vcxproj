@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Office 2007 (silver)</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{B938464D-9E72-47BD-80E3-6EF49D12B474}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyle2007Silver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyle2007Silver280.dll ..\..\bin64\BCGPStyle2007Silver280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyle2007Silver.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyle2007Silver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyle2007Silver280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyle2007Silver280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyle2007Silver.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyle2007Silver280.dll ..\..\bin64\BCGPStyle2007Silver280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyle2007Silver.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyle2007Silver.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyle2007Silver280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyle2007Silver280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyle2007Silver.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyle2007Silver.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Back.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Close.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Close_S.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Help.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Help_S.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Maximize.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Maximize_S.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Minimize.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Minimize_S.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Restore.png" />
+    <Image Include="Office 2007 (silver)\AppCaption\SysBtn_Restore_S.png" />
+    <Image Include="Office 2007 (silver)\Calculator\Btn.png" />
+    <Image Include="Office 2007 (silver)\ComboBox\Btn.png" />
+    <Image Include="Office 2007 (silver)\MainWnd\Border.png" />
+    <Image Include="Office 2007 (silver)\MainWnd\BorderCaption.png" />
+    <Image Include="Office 2007 (silver)\MainWnd\BorderMDIChild.png" />
+    <Image Include="Office 2007 (silver)\MenuBar\Btn.png" />
+    <Image Include="Office 2007 (silver)\OutlookWnd\BarBack.png" />
+    <Image Include="Office 2007 (silver)\OutlookWnd\BtnPage.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Border.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Gripper.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Item_Back.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Item_Marker_C.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Item_Marker_R.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Item_Pin.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\MenuButton.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\MenuHighlight.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\MenuHighlightDisabled.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\MenuScrollBtn.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\ResizeBar.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\ResizeBar_HV.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\ResizeBar_HVT.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\ResizeBar_V.png" />
+    <Image Include="Office 2007 (silver)\PopupBar\Tear.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Border_Floaty.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Border_QAT.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Check.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Default_Icon.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Default_Image.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Default_QAT.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Default_QAT_Icon.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Group.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_F_C.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_F_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_L_C.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_L_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_M_C.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\GroupMenu_M_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Group_F.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Group_L.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Group_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Group_S.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Launch.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Launch_Icon.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Main.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Main_Panel.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Menu_H_C.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Menu_H_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Menu_V_C.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Menu_V_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Normal_B.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Normal_S.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Page_L.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Page_R.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Palette_B.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Palette_M.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Palette_T.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Push.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\Radio.PNG" />
+    <Image Include="Office 2007 (silver)\Ribbon\Buttons\StatusPane.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Caption_QA.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Caption_QA_Glass.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Blue\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Blue\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Blue\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Blue\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Green\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Green\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Green\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Green\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Indigo\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Indigo\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Indigo\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Indigo\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Orange\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Orange\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Orange\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Orange\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Panel_Back_B.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Panel_Back_T.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Red\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Red\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Red\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Red\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Separator.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Violet\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Violet\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Violet\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Violet\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Yellow\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Yellow\Caption.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Yellow\Default.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Context\Yellow\Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Tab.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Category_Tab_Sep.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\KeyTip.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Panel_Back_B.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Panel_Back_T.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Panel_Main.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Panel_Main_Border.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Panel_QAT.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Progress\Back.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Progress\Infinity.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Progress\Normal.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Progress\Normal_Ext.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Separator.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Minus.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Plus.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb_H.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb_L.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb_R.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb_T.png" />
+    <Image Include="Office 2007 (silver)\Ribbon\Slider\Thumb_V.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\Back_1.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\Back_2.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\Item_1.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\Item_2.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\Thumb.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Horz\ThumbIcon.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\Back_1.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\Back_2.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\Item_1.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\Item_2.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\Thumb.png" />
+    <Image Include="Office 2007 (silver)\Scroll\Vert\ThumbIcon.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_B.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_H.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_L.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_R.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_T.png" />
+    <Image Include="Office 2007 (silver)\Slider\Thumb_V.png" />
+    <Image Include="Office 2007 (silver)\StatusBar\Back.png" />
+    <Image Include="Office 2007 (silver)\StatusBar\Back_Ext.png" />
+    <Image Include="Office 2007 (silver)\StatusBar\PaneBorder.png" />
+    <Image Include="Office 2007 (silver)\StatusBar\SizeGrip.png" />
+    <Image Include="Office 2007 (silver)\Tab\3D.png" />
+    <Image Include="Office 2007 (silver)\Tab\Dot_E.png" />
+    <Image Include="Office 2007 (silver)\Tab\Dot_R.png" />
+    <Image Include="Office 2007 (silver)\Tab\Flat.png" />
+    <Image Include="Office 2007 (silver)\TaskPane\ScrollBtn.png" />
+    <Image Include="Office 2007 (silver)\ToolBar\Btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Office 2007 (silver)\Style.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

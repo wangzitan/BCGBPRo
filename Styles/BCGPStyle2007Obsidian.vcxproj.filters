@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d8e20784-fbaa-46ba-9154-e1b5fe00fe63}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{d964587b-519d-48cb-b789-b8f3d8ffa826}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\AppCaption">
+      <UniqueIdentifier>{ea41e3b1-dd30-4f0d-99b4-61662cae56e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ComboBox">
+      <UniqueIdentifier>{16aadbc0-62d3-4c5c-9f3a-c91b34974e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MainWnd">
+      <UniqueIdentifier>{3c3f31ec-2be8-4007-b8b0-c2250b535d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MenuBar">
+      <UniqueIdentifier>{4b876a18-c5b6-42f0-9ed7-4797757bdb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PopupBar">
+      <UniqueIdentifier>{06fe4d5b-d517-49d7-a0e5-1bb31a22723f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\StatusBar">
+      <UniqueIdentifier>{45919934-09d3-4687-b324-697fb3377f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tab">
+      <UniqueIdentifier>{eebc8d4b-d9bf-4d4b-bad9-53df45c6c660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\TaskPane">
+      <UniqueIdentifier>{88191866-218b-4758-8ccf-c0b3d38e552c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ToolBar">
+      <UniqueIdentifier>{98f86853-c7c1-426f-a987-bc091adce539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon">
+      <UniqueIdentifier>{db5a84e8-eb06-471f-94e3-baa9fc196db3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Buttons">
+      <UniqueIdentifier>{948c7616-0747-422e-b0b2-e76173a6f4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context">
+      <UniqueIdentifier>{66dda9f7-861a-4648-a504-b43fe191776a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Red">
+      <UniqueIdentifier>{fe056306-9a3a-49cd-a970-efae23a7147e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Orange">
+      <UniqueIdentifier>{7015b311-a329-4abf-87c8-d6cbff6d5ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Yellow">
+      <UniqueIdentifier>{5b628c79-a105-49b5-9a53-51cab0f19558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Green">
+      <UniqueIdentifier>{a88b7be6-304e-42c0-94ce-987916703732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Blue">
+      <UniqueIdentifier>{73b56eb2-381d-413b-95cc-2eac55258271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Indigo">
+      <UniqueIdentifier>{59fac666-ad65-4009-83c1-7b6b13630854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Violet">
+      <UniqueIdentifier>{2a5a2fc0-b537-4f16-86aa-02b09c8faf3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Slider">
+      <UniqueIdentifier>{9ef341f9-a4b7-445c-821b-51921f362b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Progress">
+      <UniqueIdentifier>{30ceca25-9b91-4618-8b7f-183e2257407a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Outlook">
+      <UniqueIdentifier>{9b656847-19b3-4cbd-bdf8-a1110c82125d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll">
+      <UniqueIdentifier>{ec9f3bd7-f0cb-409f-ae0b-e205dc721f5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Horz">
+      <UniqueIdentifier>{c26ed1c3-ad6e-4a02-b3c8-d640fb6793dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Vert">
+      <UniqueIdentifier>{8671e0c6-77df-4e54-b7a7-fdc86d8fb817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Slider No. 1">
+      <UniqueIdentifier>{844aeca1-a417-4a7d-b353-adb94b7546d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Calculator">
+      <UniqueIdentifier>{170e67e8-c277-4103-81c7-b0ef62114300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyle2007Obsidian.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Back.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Close.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Close_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Help.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Help_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Maximize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Maximize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Minimize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Minimize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Restore.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\AppCaption\SysBtn_Restore_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\ComboBox\Btn.png">
+      <Filter>Resource Files\ComboBox</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\MainWnd\Border.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\MainWnd\BorderCaption.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\MainWnd\BorderMDIChild.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\MenuBar\Btn.png">
+      <Filter>Resource Files\MenuBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Border.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Gripper.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Item_Back.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Item_Marker_C.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Item_Marker_R.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Item_Pin.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\MenuButton.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\MenuHighlight.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\MenuHighlightDisabled.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\MenuScrollBtn.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\ResizeBar.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\ResizeBar_HV.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\ResizeBar_HVT.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\ResizeBar_V.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\PopupBar\Tear.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\StatusBar\Back.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\StatusBar\Back_Ext.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\StatusBar\PaneBorder.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\StatusBar\SizeGrip.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Tab\3D.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Tab\Dot_E.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Tab\Dot_R.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Tab\Flat.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\TaskPane\ScrollBtn.png">
+      <Filter>Resource Files\TaskPane</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\ToolBar\Btn.png">
+      <Filter>Resource Files\ToolBar</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Check.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Default.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Default_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Default_Image.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Default_QAT.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Default_QAT_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Group.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Group_F.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Group_L.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Group_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Group_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_F_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_F_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_L_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_L_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_M_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\GroupMenu_M_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Launch.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Launch_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Main.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Main_Panel.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Menu_H_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Menu_H_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Menu_V_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Menu_V_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Normal_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Normal_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Page_L.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Page_R.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Palette_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Palette_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Palette_T.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Push.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\Radio.PNG">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Buttons\StatusPane.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Red\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Red\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Red\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Red\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Orange\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Orange\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Orange\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Orange\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Yellow\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Yellow\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Yellow\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Yellow\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Green\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Green\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Green\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Green\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Blue\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Blue\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Blue\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Blue\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Indigo\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Indigo\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Indigo\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Indigo\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Violet\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Violet\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Violet\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Violet\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Panel_Back_B.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Panel_Back_T.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Context\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Minus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Plus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb_H.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb_L.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb_R.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb_T.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Slider\Thumb_V.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Progress\Back.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Progress\Infinity.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Progress\Normal.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Progress\Normal_Ext.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Border_Floaty.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Border_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Caption_QA.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Caption_QA_Glass.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Back.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Tab.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Category_Tab_Sep.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\KeyTip.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Panel_Back_B.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Panel_Back_T.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Panel_Main.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Panel_Main_Border.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Panel_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Ribbon\Separator.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\OutlookWnd\BarBack.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\OutlookWnd\BtnPage.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\Back_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\Back_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\Item_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\Item_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\Thumb.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Horz\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\Back_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\Back_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\Item_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\Item_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\Thumb.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Scroll\Vert\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_B.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_H.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_L.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_R.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_T.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Slider\Thumb_V.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2007 (obsidian - black)\Calculator\Btn.png">
+      <Filter>Resource Files\Calculator</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Office 2007 (obsidian - black)\Style.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyle2007Obsidian.rc2">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

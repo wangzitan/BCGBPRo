@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Copy_1</title>
+  <g id="BCG-largeIcons">
+    <g id="Copy">
+      <path d="M6.5,11H1V2H6l.5,1ZM14,15V7L12,5H6V15Z" style="fill: #fff"/>
+      <path d="M5,12H0V1H6L8,3H6.5l-1-1H1v9H5ZM15,7v8H6V4h6ZM12,7h1.6L12,5.5Zm2,7V8H11V5H7v9Z" style="fill: #727272"/>
+      <path d="M4,5H2V4H4Zm6,2H8V8h2Zm3,2H8v1h5Zm0,2H8v1h5ZM5,6H2V7H5ZM5,8H2V9H5Z" style="fill: #4a7db1"/>
+    </g>
+  </g>
+</svg>

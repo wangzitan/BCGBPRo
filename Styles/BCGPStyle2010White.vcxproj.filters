@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fd31a5d5-2b7e-43d7-916f-f2dd63704e07}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8b6f26a6-eadb-474d-9066-47a2add66b59}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\AppCaption">
+      <UniqueIdentifier>{2b6cd0af-8c61-48f8-8932-f067f66b4117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ComboBox">
+      <UniqueIdentifier>{4f0799f5-54c6-4754-ada3-e33f3b1378e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MainWnd">
+      <UniqueIdentifier>{c4087c8f-9812-471b-8629-89144b988b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\MenuBar">
+      <UniqueIdentifier>{a712eb3d-7807-4e38-9ef4-abfec62fbb2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\PopupBar">
+      <UniqueIdentifier>{cd70174e-87c3-4775-9c28-bad7381a0a2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\StatusBar">
+      <UniqueIdentifier>{49deb3d0-5e20-4c4c-a9e6-3f90a6dbdc79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tab">
+      <UniqueIdentifier>{d8ec8368-91cf-47bd-95e4-f13f1687fba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\TaskPane">
+      <UniqueIdentifier>{9da6c549-2ad6-4108-b528-1833e8757c0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\ToolBar">
+      <UniqueIdentifier>{d4ba0335-dacf-49e1-a9cf-d14ab9aaba4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon">
+      <UniqueIdentifier>{b11843ca-626f-4969-8f0e-b0a700d92803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Buttons">
+      <UniqueIdentifier>{3b9d41b7-fe77-430f-979c-d824c679d5be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context">
+      <UniqueIdentifier>{b7035873-aa89-4821-83e2-8d8333523501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Red">
+      <UniqueIdentifier>{361ab407-e946-4234-be69-66794aa41849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Orange">
+      <UniqueIdentifier>{14d83ed2-b9b7-4b6e-91f4-99296b5fcd78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Yellow">
+      <UniqueIdentifier>{de7d7b44-ceb9-484b-9609-568252487491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Green">
+      <UniqueIdentifier>{a853ef11-637e-47d0-9ce5-de98ef5a8e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Blue">
+      <UniqueIdentifier>{5ea22b97-b85c-4d23-a9dd-58bb6235fab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Indigo">
+      <UniqueIdentifier>{4e30484f-bfa5-4dde-b154-772ffbc6d398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Category_Context\Violet">
+      <UniqueIdentifier>{51349372-68ca-4e0e-a276-5d809e778ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Slider">
+      <UniqueIdentifier>{7c6a82ea-8ac5-4f3d-ac25-38ec17527227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Ribbon\Progress">
+      <UniqueIdentifier>{f51fe49e-69b8-42f6-8259-0f64fddf27b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Outlook">
+      <UniqueIdentifier>{da188c09-1a78-461a-b9a8-38a445c9ff33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll">
+      <UniqueIdentifier>{71dff2b8-2de5-4b45-8238-1f784152e681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Horz">
+      <UniqueIdentifier>{5950a3ba-c5a8-4936-a75d-c36600c4ad59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scroll\Vert">
+      <UniqueIdentifier>{b803250e-19de-4e76-89ff-b93ec5755248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Slider No. 1">
+      <UniqueIdentifier>{e6ef7849-2e82-411e-913d-129ea3da5189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Calculator">
+      <UniqueIdentifier>{8921fd04-0c34-4c56-9092-b194e7875d88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyle2010White.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Back.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Back_C.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Close.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Close_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Help.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Help_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Maximize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Maximize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Minimize.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Minimize_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Restore.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\AppCaption\SysBtn_Restore_S.png">
+      <Filter>Resource Files\AppCaption</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\ComboBox\Btn.png">
+      <Filter>Resource Files\ComboBox</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\MainWnd\AppCaption.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\MainWnd\Border.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\MainWnd\BorderCaption.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\MainWnd\BorderMDIChild.png">
+      <Filter>Resource Files\MainWnd</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\MenuBar\Btn.png">
+      <Filter>Resource Files\MenuBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Border.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Gripper.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Item_Back.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Item_Marker_C.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Item_Marker_R.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Item_Pin.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\MenuButton.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\MenuHighlight.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\MenuHighlightDisabled.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\MenuScrollBtn.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\ResizeBar.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\ResizeBar_HV.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\ResizeBar_HVT.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\ResizeBar_V.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\PopupBar\Tear.png">
+      <Filter>Resource Files\PopupBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\StatusBar\Back.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\StatusBar\Back_Ext.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\StatusBar\PaneBorder.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\StatusBar\SizeGrip.png">
+      <Filter>Resource Files\StatusBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Tab\3D.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Tab\Dot_E.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Tab\Dot_R.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Tab\Flat.png">
+      <Filter>Resource Files\Tab</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\TaskPane\ScrollBtn.png">
+      <Filter>Resource Files\TaskPane</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\ToolBar\Btn.png">
+      <Filter>Resource Files\ToolBar</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_List_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_Normal.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_Push.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_Separator_H.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_Separator_V.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_View.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\BS_View_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Check.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Default.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Default_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Default_Image.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Default_QAT.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Group.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Group_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\GroupMenu_F_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\GroupMenu_L_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\GroupSeparator.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Launch.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Launch_Icon.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Main.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Main_Panel.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Menu_H_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Menu_H_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Menu_V_C.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Menu_V_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Minimize_Icon.PNG">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Normal_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Normal_S.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Page_L.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Page_R.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Palette_B.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Palette_M.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Palette_T.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Push.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\Radio.PNG">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Buttons\StatusPane.png">
+      <Filter>Resource Files\Ribbon\Buttons</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Panel.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Red\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Red</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Panel.PNG">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Orange\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Orange</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Panel.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Yellow\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Yellow</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Panel.PNG">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Green\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Green</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Panel.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Blue\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Blue</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Panel.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Indigo\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Indigo</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Back.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Caption.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Default.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Panel.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Separator.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Tab.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Context\Violet\Tab_Glow.png">
+      <Filter>Resource Files\Ribbon\Category_Context\Violet</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Minus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Plus.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb_H.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb_L.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb_R.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb_T.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Slider\Thumb_V.png">
+      <Filter>Resource Files\Ribbon\Slider</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Progress\Back.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Progress\Infinity.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Progress\Normal.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Progress\Normal_Ext.png">
+      <Filter>Resource Files\Ribbon\Progress</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Border_Floaty.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Border_Panel.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Border_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Caption_QA.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Caption_QA_Glass.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Back.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Tab.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Tab_Frame.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Category_Tab_Sep.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\KeyTip.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Panel_Back.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Panel_BS.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Panel_Main.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Panel_Main_Border.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Panel_QAT.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Ribbon\Separator.png">
+      <Filter>Resource Files\Ribbon</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\OutlookWnd\BarBack.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\OutlookWnd\BtnPage.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\OutlookWnd\Splitter.png">
+      <Filter>Resource Files\Outlook</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Back_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Back_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Item_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Item_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Thumb_1.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\Thumb_2.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Horz\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Horz</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Back_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Back_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Item_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Item_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Thumb_1.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\Thumb_2.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Scroll\Vert\ThumbIcon.png">
+      <Filter>Resource Files\Scroll\Vert</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_B.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_H.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_L.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_R.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_T.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Slider\Thumb_V.png">
+      <Filter>Resource Files\Slider No. 1</Filter>
+    </Image>
+    <Image Include="Office 2010 (white)\Calculator\Btn.png">
+      <Filter>Resource Files\Calculator</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Office 2010 (white)\Style.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyle2010White.rc2">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

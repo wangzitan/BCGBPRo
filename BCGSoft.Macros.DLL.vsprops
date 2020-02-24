@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="BCGSoft.Macros.DLL"
+    InheritedPropertySheets=".\BCGSoft.Macros.vsprops"
+	>
+	<UserMacro
+		Name="BCGSoft_IntDir"
+		Value="objL\$(BCGSoft_IntDirSuffix)"
+	/>
+	<UserMacro
+		Name="BCGSoft_TargetName"
+		Value="$(BCGSoft_ProductName)"
+	/>
+</VisualStudioPropertySheet>

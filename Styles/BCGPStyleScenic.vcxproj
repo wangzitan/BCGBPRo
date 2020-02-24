@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Scenic</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{19DEEF78-2F2C-4072-B8AC-EA8EB52C0139}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyleScenic.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyleScenic280.dll ..\..\bin64\BCGPStyleScenic280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyleScenic.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyleScenic.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyleScenic280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyleScenic280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyleScenic.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyleScenic280.dll ..\..\bin64\BCGPStyleScenic280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyleScenic.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyleScenic.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyleScenic280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyleScenic280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyleScenic.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyleScenic.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Scenic\ComboBox\Btn.png" />
+    <Image Include="Scenic\PopupBar\Border.png" />
+    <Image Include="Scenic\PopupBar\Item_Back.png" />
+    <Image Include="Scenic\PopupBar\Item_Marker_C.png" />
+    <Image Include="Scenic\PopupBar\Item_Marker_R.png" />
+    <Image Include="Scenic\PopupBar\MenuHighlight.png" />
+    <Image Include="Scenic\PopupBar\MenuHighlightDisabled.png" />
+    <Image Include="Scenic\PopupBar\ResizeBar.png" />
+    <Image Include="Scenic\PopupBar\ResizeBar_HV.png" />
+    <Image Include="Scenic\PopupBar\ResizeBar_HVT.png" />
+    <Image Include="Scenic\PopupBar\ResizeBar_V.png" />
+    <Image Include="Scenic\Ribbon\Border_Floaty.png" />
+    <Image Include="Scenic\Ribbon\Border_Panel.png" />
+    <Image Include="Scenic\Ribbon\Border_QAT.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Check.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Default.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Default_Icon.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Default_Image.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Default_QAT.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_F_C.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_F_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_L_C.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_L_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_M_C.png" />
+    <Image Include="Scenic\Ribbon\Buttons\GroupMenu_M_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Group_F.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Group_L.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Group_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Group_S.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Launch.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Launch_Icon.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Main.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Main_Panel.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Menu_H_C.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Menu_H_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Menu_V_C.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Menu_V_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Normal_B.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Normal_S.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Page_L.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Page_R.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Palette_B.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Palette_M.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Palette_T.png" />
+    <Image Include="Scenic\Ribbon\Buttons\Radio.PNG" />
+    <Image Include="Scenic\Ribbon\Buttons\StatusPane.png" />
+    <Image Include="Scenic\Ribbon\Caption_QA.png" />
+    <Image Include="Scenic\Ribbon\Category_Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Blue\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Blue\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Blue\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Green\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Green\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Green\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Indigo\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Indigo\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Indigo\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Orange\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Orange\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Orange\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Red\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Red\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Red\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Separator.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Violet\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Violet\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Violet\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Yellow\Back.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Yellow\Caption.png" />
+    <Image Include="Scenic\Ribbon\Category_Context\Yellow\Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Tab.png" />
+    <Image Include="Scenic\Ribbon\Category_Tab_Frame.png" />
+    <Image Include="Scenic\Ribbon\Category_Tab_Sep.png" />
+    <Image Include="Scenic\Ribbon\KeyTip.png" />
+    <Image Include="Scenic\Ribbon\Panel_Back.png" />
+    <Image Include="Scenic\Ribbon\Panel_Back_Sep.png" />
+    <Image Include="Scenic\Ribbon\Panel_Main.png" />
+    <Image Include="Scenic\Ribbon\Separator.png" />
+    <Image Include="Scenic\Ribbon\Slider\Minus.png" />
+    <Image Include="Scenic\Ribbon\Slider\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Scenic\Style.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

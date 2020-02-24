@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="BCGSoft.Macros"
+	>
+	<UserMacro Name="BCGSoft_VersionMajor" Value="28" />
+	<UserMacro Name="BCGSoft_VersionMinor" Value="00" />
+	<UserMacro
+		Name="BCGSoft_Version"
+		Value="$(BCGSoft_VersionMajor)$(BCGSoft_VersionMinor)"
+	/>
+	<UserMacro
+		Name="BCGSoft_IntDirSuffix"
+		Value="$(PlatformName)\$(VisualStudioVersion)\$(ConfigurationName)"
+	/>
+	<UserMacro
+		Name="BCGSoft_OutDirX86"
+		Value="..\Bin"
+	/>
+	<UserMacro
+		Name="BCGSoft_OutDirX64"
+		Value="..\Bin64"
+	/>
+	<UserMacro
+		Name="BCGSoft_ProductName"
+		Value="BCGCBPRO$(BCGSoft_Version)"
+	/>
+</VisualStudioPropertySheet>

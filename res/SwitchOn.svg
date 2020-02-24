@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="16" viewBox="0 0 36 16">
+  <title>SwitchOn</title>
+  <g id="BCGSoft_GUIicons">
+    <g>
+      <g>
+        <path d="M8,15A7,7,0,0,1,8,1H28a7,7,0,0,1,0,14Z" style="fill:#000" />
+        <path d="M28,2a6,6,0,0,1,0,12H8A6,6,0,0,1,8,2H28m0-2H8A8,8,0,0,0,8,16H28A8,8,0,0,0,28,0Z" style="fill::#000" />
+      </g>
+      <circle cx="28" cy="8" r="4.5" style="fill: #fff"/>
+    </g>
+  </g>
+</svg>

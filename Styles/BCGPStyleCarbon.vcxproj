@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Carbon</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{4A5F4F5C-F9E1-422D-BFFB-9195D2609F03}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\..\bin\</OutDir>
+    <IntDir>.\intermediate\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyleCarbon.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyleCarbon280.dll ..\..\bin64\BCGPStyleCarbon280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyleCarbon.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyleCarbon.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyleCarbon280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyleCarbon280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\intermediate\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\intermediate\BCGPStyleCarbon.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\intermediate\</ObjectFileName>
+      <ProgramDataBaseFileName>.\intermediate\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>%40Echo Copying Style DLL to %27bin64%27 folder.
+copy ..\..\bin\BCGPStyleCarbon280.dll ..\..\bin64\BCGPStyleCarbon280.dll</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\..\bin\BCGPStyleCarbon.tlb</TypeLibraryName>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;_BCGP_STYLE_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\..\bin\BCGPStyleCarbon.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <OutputFile>..\..\bin/BCGPStyleCarbon280.dll</OutputFile>
+      <ImportLibrary>.\..\..\bin\BCGPStyleCarbon280.lib</ImportLibrary>
+      <NoEntryPoint>true</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BCGPStyleCarbon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="BCGPStyleCarbon.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Carbon\AppCaption\SysBtn_Back.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Back_C.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Back_C_H.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Back_H.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Close.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Help.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Maximize.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Minimize.png" />
+    <Image Include="Carbon\AppCaption\SysBtn_Restore.png" />
+    <Image Include="Carbon\MainWnd\Border.png" />
+    <Image Include="Carbon\MainWnd\BorderCaption.png" />
+    <Image Include="Carbon\MainWnd\borderL.png" />
+    <Image Include="Carbon\MainWnd\BorderMDIChild.png" />
+    <Image Include="Carbon\MainWnd\borderMini.png" />
+    <Image Include="Carbon\MainWnd\borderMiniCaption.png" />
+    <Image Include="Carbon\MainWnd\borderMiniTB.png" />
+    <Image Include="Carbon\MainWnd\borderR.png" />
+    <Image Include="Carbon\MainWnd\borderTB.png" />
+    <Image Include="Carbon\MenuBar\Btn.png" />
+    <Image Include="Carbon\PopupBar\Border.png" />
+    <Image Include="Carbon\PopupBar\btnCaption.png" />
+    <Image Include="Carbon\PopupBar\Gripper.png" />
+    <Image Include="Carbon\PopupBar\Item_Back.png" />
+    <Image Include="Carbon\PopupBar\Item_Marker_C.png" />
+    <Image Include="Carbon\PopupBar\Item_Marker_R.png" />
+    <Image Include="Carbon\PopupBar\Tear.png" />
+    <Image Include="Carbon\Ribbon\Buttons\Group.PNG" />
+    <Image Include="Carbon\Ribbon\Buttons\Push.png" />
+    <Image Include="Carbon\StatusBar\Back.png" />
+    <Image Include="Carbon\StatusBar\Back_Ext.png" />
+    <Image Include="Carbon\StatusBar\PaneBorder.png" />
+    <Image Include="Carbon\StatusBar\SizeGrip.png" />
+    <Image Include="Carbon\ToolBar\Btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Carbon\Style.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

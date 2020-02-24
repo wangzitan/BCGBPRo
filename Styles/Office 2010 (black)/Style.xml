@@ -1,0 +1,883 @@
+<STYLE>
+	<VERSION>
+		<NUMBER>2010</NUMBER>
+		<TYPE>30</TYPE>
+		<ID_PREFIX>2010_3_</ID_PREFIX>
+	</VERSION>
+	<DESCRIPTION>
+		<NAME>Black</NAME>
+	</DESCRIPTION>
+	<GLOBALS>
+		<BarText>0, 0, 0</BarText>
+		<BarFace>113, 113, 113</BarFace>
+		<ActiveCaption>255, 231, 162</ActiveCaption>
+		<CaptionText>70, 70, 70</CaptionText>
+		<InactiveCaption>124, 124, 124</InactiveCaption>
+		<InactiveCaptionText>255, 255, 255</InactiveCaptionText>
+		<FloatToolBarBorder>68, 68, 68</FloatToolBarBorder>
+		<BarShadow>52, 52, 52</BarShadow>
+		<BarDkShadow>0, 0, 0</BarDkShadow>
+		<BarLight>240, 242, 245</BarLight>
+		<BarHilite>255, 255, 255</BarHilite>
+		<AutoPremultiply>TRUE</AutoPremultiply>
+		<HighlightGradientDark>245, 219, 128</HighlightGradientDark>
+		<HighlightGradientLight>250, 247, 221</HighlightGradientLight>
+		<HighlightDnGradientDark>254, 226, 135</HighlightDnGradientDark>
+		<HighlightDnGradientLight>246, 200, 103</HighlightDnGradientLight>
+		<HighlightCheckedGradientDark>255, 216, 107</HighlightCheckedGradientDark>
+		<HighlightCheckedGradientLight>255, 244, 128</HighlightCheckedGradientLight>
+		<PressedButtonBorder>194, 136, 56</PressedButtonBorder>
+		<Highlight>136, 195, 255</Highlight>
+		<HighlightText>0, 0, 0</HighlightText>
+		<MenuShadowColor>240, 240, 240</MenuShadowColor>
+		<DlgBackColor>131, 131, 131</DlgBackColor>
+		<DlgButtonsAreaColor>111, 111, 111</DlgButtonsAreaColor>
+		<TOOLTIP>
+			<DRAW_SEPARATOR>FALSE</DRAW_SEPARATOR>
+			<ROUNDED_CORNERS>TRUE</ROUNDED_CORNERS>
+			<COLOR_FILL>255, 255, 255</COLOR_FILL>
+			<COLOR_FILLGRADIENT>229, 229, 240</COLOR_FILLGRADIENT>
+			<COLOR_TEXT>76, 76, 76</COLOR_TEXT>
+			<COLOR_BORDER>118, 118, 118</COLOR_BORDER>
+		</TOOLTIP>
+	</GLOBALS>
+	<MAINWND>
+		<CAPTION>
+			<FONT>
+				<WEIGHT>NORMAL</WEIGHT>
+				<QUALITY>CLEARTYPE</QUALITY>
+			</FONT>
+			<ActiveStart>113, 113, 113</ActiveStart>
+			<ActiveFinish>113, 113, 113</ActiveFinish>
+			<InactiveStart>158, 158, 158</InactiveStart>
+			<InactiveFinish>158, 158, 158</InactiveFinish>
+			<ActiveText>226, 225, 226</ActiveText>
+			<InactiveText>221, 221, 221</InactiveText>
+			<ActiveTitleText>226, 225, 226</ActiveTitleText>
+			<InactiveTitleText>221, 221, 221</InactiveTitleText>
+			<TextCenter>TRUE</TextCenter>
+			<BORDER>
+				<SIZE>35, 31</SIZE>
+				<CORNERS>5, 9, 5, 3</CORNERS>
+			</BORDER>
+			<APP_BORDER>
+				<SIZE>35, 31</SIZE>
+				<CORNERS>5, 9, 5, 3</CORNERS>
+			</APP_BORDER>
+			<BUTTONS>
+				<NORMAL>
+					<ConstSize>23, 23</ConstSize>
+					<IconSize>26, 25</IconSize>
+					<SIZE>13, 16</SIZE>
+					<CORNERS>4, 4, 4, 4</CORNERS>
+				</NORMAL>
+				<SMALL>
+					<ConstSize>16, 16</ConstSize>
+					<IconSize>13, 12</IconSize>
+					<SIZE>13, 16</SIZE>
+					<CORNERS>4, 4, 4, 4</CORNERS>
+				</SMALL>
+			</BUTTONS>
+		</CAPTION>
+		<ROUND_BORDER>9, 9</ROUND_BORDER>
+		<BORDER>
+			<SIZE>35, 23</SIZE>
+			<CORNERS>17, 0, 17, 22</CORNERS>
+			<SIDES>17, 0, 17, 17</SIDES>
+		</BORDER>
+		<BORDER_MDICHILD>
+			<SIZE>35, 23</SIZE>
+			<CORNERS>17, 0, 17, 22</CORNERS>
+			<SIDES>17, 0, 17, 17</SIDES>
+		</BORDER_MDICHILD>
+		<MainClientArea>139, 139, 139</MainClientArea>
+	</MAINWND>
+	<EDIT>
+		<BorderNormal>132, 132, 132</BorderNormal>
+		<BorderHighlighted>145, 145, 145</BorderHighlighted>
+		<BorderDisabled>160, 160, 160</BorderDisabled>
+	</EDIT>
+	<COMBO>
+		<BorderPressed>194, 136, 56</BorderPressed>
+		<BUTTON>
+			<GradientStartNormal>196, 196, 196</GradientStartNormal>
+			<GradientFinishNormal>226, 226, 226</GradientFinishNormal>
+			<GradientStartHighlighted>245, 219, 128</GradientStartHighlighted>
+			<GradientFinishHighlighted>250, 247, 221</GradientFinishHighlighted>
+			<BtnBorderHighlighted>194, 136, 56</BtnBorderHighlighted>
+			<GradientStartPressed>254, 226, 135</GradientStartPressed>
+			<GradientFinishPressed>246, 200, 103</GradientFinishPressed>
+			<BtnBorderPressed>194, 136, 56</BtnBorderPressed>
+		</BUTTON>
+	</COMBO>
+	<MENU>
+		<Light>255, 255, 255</Light>
+		<Rarely>241, 243, 246</Rarely>
+		<Border>167, 171, 176</Border>
+		<Separator1>226, 228, 231</Separator1>
+		<Separator2>255, 255, 255</Separator2>
+		<GroupBackground>240, 242, 245</GroupBackground>
+		<ItemBorder>205, 181, 130</ItemBorder>
+		<ItemBack>
+			<SIZE>20, 20</SIZE>
+			<CORNERS>3, 3, 3, 3</CORNERS>
+		</ItemBack>
+		<ItemCheck>
+			<SIZE>10, 14</SIZE>
+		</ItemCheck>
+		<ItemRadio>
+			<SIZE>10, 14</SIZE>
+		</ItemRadio>
+		<ItemPin>
+			<SIZE>16, 16</SIZE>
+		</ItemPin>
+		<Highlighted>
+			<SIZE>55, 22</SIZE>
+			<CORNERS>2, 2, 2, 2</CORNERS>
+		</Highlighted>
+		<HighlightedDisabled>
+			<SIZE>55, 22</SIZE>
+			<CORNERS>2, 2, 2, 2</CORNERS>
+		</HighlightedDisabled>
+		<ScrollBtn_T>
+			<SIZE>30, 12</SIZE>
+			<CORNERS>2, 2, 2, 2</CORNERS>
+		</ScrollBtn_T>
+		<TextNormal>59, 59, 59</TextNormal>
+		<TextHighlighted>59, 59, 59</TextHighlighted>
+		<TextDisabled>167, 167, 167</TextDisabled>
+		<COLORS>
+			<Black>124, 124, 124</Black>
+			<Black2>90, 90, 90</Black2>
+		</COLORS>
+		<BorderSize>2</BorderSize>
+		<ButtonBorder>
+			<SIZE>2, 19</SIZE>
+		</ButtonBorder>
+	</MENU>
+	<BARS>
+		<DEFAULT>
+			<Bkgnd>255, 255, 255</Bkgnd>
+			<GradientLight>113, 113, 113</GradientLight>
+			<GradientDark>113, 113, 113</GradientDark>
+		</DEFAULT>
+		<TOOLBAR>
+			<GradientLight>191, 191, 191</GradientLight>
+			<GradientDark>145, 145, 145</GradientDark>
+			<GradientVertLight>191, 191, 191</GradientVertLight>
+			<GradientVertDark>145, 145, 145</GradientVertDark>
+			<CustomizeButtonGradientLight>109, 109, 109</CustomizeButtonGradientLight>
+			<CustomizeButtonGradientDark>78, 78, 78</CustomizeButtonGradientDark>
+			<BottomLineColor>78, 78, 78</BottomLineColor>
+			<GRIPPER>
+				<SIZE>4, 4</SIZE>
+			</GRIPPER>
+			<TEAR>
+				<SIZE>35, 3</SIZE>
+			</TEAR>
+			<BUTTON>
+				<SIZE>20, 22</SIZE>
+				<CORNERS>4, 4, 4, 3</CORNERS>
+			</BUTTON>
+			<TextNormal>0, 0, 0</TextNormal>
+			<TextHighlighted>70, 70, 70</TextHighlighted>
+			<TextDisabled>94, 94, 94</TextDisabled>
+		</TOOLBAR>
+		<MENUBAR>
+			<GradientLight>113, 113, 113</GradientLight>
+			<GradientDark>113, 113, 113</GradientDark>
+			<GradientVertLight>113, 113, 113</GradientVertLight>
+			<GradientVertDark>113, 113, 113</GradientVertDark>
+			<TextNormal>226, 226, 226</TextNormal>
+			<TextHighlighted>0, 0, 0</TextHighlighted>
+			<TextDisabled>94, 94, 94</TextDisabled>
+			<BUTTON>
+				<SIZE>22, 19</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+				<SIDES>2, 2, 2, 2</SIDES>
+			</BUTTON>
+		</MENUBAR>
+		<POPUPBAR>
+			<ROUND_BORDER>3, 3</ROUND_BORDER>
+			<BORDER>
+				<SIZE>7, 7</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+				<SIDES>2, 2, 2, 2</SIDES>
+			</BORDER>
+			<RESIZEBAR>
+				<BACK>
+					<SIZE>3, 11</SIZE>
+					<CORNERS>1, 2, 1, 1</CORNERS>
+				</BACK>
+				<ICON_HV>
+					<SIZE>9, 8</SIZE>
+				</ICON_HV>
+				<ICON_HVT>
+					<SIZE>9, 8</SIZE>
+				</ICON_HVT>
+				<ICON_V>
+					<SIZE>15, 3</SIZE>
+				</ICON_V>
+			</RESIZEBAR>
+		</POPUPBAR>
+		<STATUSBAR>
+			<BACK>
+				<SIZE>35, 23</SIZE>
+				<CORNERS>5, 8, 5, 5</CORNERS>
+				<SIDES>1, 8, 1, 3</SIDES>
+			</BACK>
+			<BACK_EXT>
+				<SIZE>35, 23</SIZE>
+				<CORNERS>3, 8, 5, 5</CORNERS>
+				<SIDES>3, 8, 1, 3</SIDES>
+			</BACK_EXT>
+			<PANEBORDER>
+				<SIZE>3, 20</SIZE>
+			</PANEBORDER>
+			<SIZEBOX>
+				<SIZE>11, 11</SIZE>
+			</SIZEBOX>
+			<TextNormal>226, 226, 226</TextNormal>
+			<TextDisabled>194, 194,194</TextDisabled>
+		</STATUSBAR>
+		<CAPTIONBAR>
+			<GradientLight>191, 191, 191</GradientLight>
+			<GradientDark>145, 145, 145</GradientDark>
+			<TextNormal>0, 0, 0</TextNormal>
+			<TextMessage>226, 226, 226</TextMessage>
+		</CAPTIONBAR>
+		<SCROLLBAR>
+			<HORZ>
+				<BACK_1>
+					<SIZE>4, 17</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</BACK_1>
+				<ITEM_1>
+					<SIZE>15, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</ITEM_1>
+				<THUMB_BACK_1>
+					<SIZE>7, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</THUMB_BACK_1>
+				<THUMB_ICON_1>
+					<SIZE>8, 8</SIZE>
+				</THUMB_ICON_1>
+				<BACK_2>
+					<SIZE>4, 17</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</BACK_2>
+				<ITEM_2>
+					<SIZE>15, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</ITEM_2>
+				<THUMB_BACK_2>
+					<SIZE>7, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</THUMB_BACK_2>
+				<THUMB_ICON_2>
+					<SIZE>8, 8</SIZE>
+				</THUMB_ICON_2>
+			</HORZ>
+			<VERT>
+				<BACK_1>
+					<SIZE>17, 4</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</BACK_1>
+				<ITEM_1>
+					<SIZE>15, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</ITEM_1>
+				<THUMB_BACK_1>
+					<SIZE>15, 21</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</THUMB_BACK_1>
+				<THUMB_ICON_1>
+					<SIZE>8, 8</SIZE>
+				</THUMB_ICON_1>
+				<BACK_2>
+					<SIZE>17, 4</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</BACK_2>
+				<ITEM_2>
+					<SIZE>15, 15</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</ITEM_2>
+				<THUMB_BACK_2>
+					<SIZE>15, 21</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</THUMB_BACK_2>
+				<THUMB_ICON_2>
+					<SIZE>8, 8</SIZE>
+				</THUMB_ICON_2>
+			</VERT>
+		</SCROLLBAR>
+	</BARS>
+	<TASK>
+		<GradientDark>255, 255, 255</GradientDark>
+		<GradientLight>255, 255, 255</GradientLight>
+		<GROUP>
+			<NORMAL>
+				<CAPTION>
+					<DarkNormal>221, 224, 227</DarkNormal>
+					<LightNormal>240, 241, 242</LightNormal>
+					<DarkHighlighted>232, 234, 236</DarkHighlighted>
+					<LightHighlighted>255, 255, 255</LightHighlighted>
+					<TextNormal>0, 0, 0</TextNormal>
+					<TextHighlighted>0, 0, 0</TextHighlighted>
+				</CAPTION>
+				<AREA>
+					<DarkNormal>255, 255, 255</DarkNormal>
+					<LightNormal>255, 255, 255</LightNormal>
+				</AREA>
+			</NORMAL>
+			<SPECIAL>
+				<CAPTION>
+					<DarkNormal>221, 224, 227</DarkNormal>
+					<LightNormal>240, 241, 242</LightNormal>
+					<DarkHighlighted>232, 234, 236</DarkHighlighted>
+					<LightHighlighted>255, 255, 255</LightHighlighted>
+					<TextNormal>0, 0, 0</TextNormal>
+					<TextHighlighted>0, 0, 0</TextHighlighted>
+				</CAPTION>
+				<AREA>
+					<DarkNormal>255, 255, 255</DarkNormal>
+					<LightNormal>255, 255, 255</LightNormal>
+				</AREA>
+			</SPECIAL>
+			<BORDER>199, 203, 209</BORDER>
+		</GROUP>
+		<SCROLL_BUTTON>
+			<SIZE>13, 24</SIZE>
+			<CORNERS>2, 2, 2, 2</CORNERS>
+		</SCROLL_BUTTON>
+	</TASK>
+	<TABS>
+		<TextColorActive>77, 77, 77</TextColorActive>
+		<TextColorInactive>226, 226, 226</TextColorInactive>
+		<3D>
+			<BUTTON>
+				<SIZE>13, 24</SIZE>
+				<CORNERS>4, 4, 4, 2</CORNERS>
+			</BUTTON>
+		</3D>
+		<FLAT>
+			<Black>52, 52, 52</Black>
+			<Highlight>52, 52, 52</Highlight>
+			<BUTTON>
+				<SIZE>24, 15</SIZE>
+				<CORNERS>4, 4, 0, 6</CORNERS>
+			</BUTTON>
+			<BorderInnerNormal>145, 145, 145</BorderInnerNormal>
+			<BorderInnerActive>145, 145, 145</BorderInnerActive>
+			<BorderOuterNormal>52, 52, 52</BorderOuterNormal>
+			<BorderOuterActive>52, 52, 52</BorderOuterActive>
+			<TextActive>77, 77, 77</TextActive>
+			<TextInactive>226, 226, 226</TextInactive>
+		</FLAT>
+		<DOT>
+			<ELLIPSE>
+				<SIZE>9, 9</SIZE>
+			</ELLIPSE>
+			<RECTANGLE>
+				<SIZE>9, 9</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</RECTANGLE>
+		</DOT>
+	</TABS>
+	<HEADER>
+		<NormalStart>106, 106, 106</NormalStart>
+		<NormalFinish>106, 106, 106</NormalFinish>
+		<NormalBorder>68, 68, 68</NormalBorder>
+		<TextNormal>226, 226, 226</TextNormal>
+		<HighlightedStart>255, 223, 107</HighlightedStart>
+		<HighlightedFinish>255, 252, 230</HighlightedFinish>
+		<HighlightedBorder>232, 191, 58</HighlightedBorder>
+		<TextHighlighted>0, 0, 0</TextHighlighted>
+		<PressedStart>186, 186, 186</PressedStart>
+		<PressedFinish>186, 186, 186</PressedFinish>
+		<PressedBorder>68, 68, 68</PressedBorder>
+		<TextPressed>0, 0, 0</TextPressed>
+	</HEADER>
+	<RIBBON>
+		<PANEL>
+			<BACK>
+				<FULL>
+					<SIZE>42, 84</SIZE>
+					<CORNERS>1, 1, 3, 1</CORNERS>
+				</FULL>
+			</BACK>
+			<CAPTION>
+				<LAUNCH_BTN>
+					<SIZE>15, 14</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</LAUNCH_BTN>
+				<LAUNCH_ICON>
+					<SIZE>8, 8</SIZE>
+				</LAUNCH_ICON>
+				<TextNormal>36, 36, 36</TextNormal>
+				<TextHighlighted>36, 36, 36</TextHighlighted>
+			</CAPTION>
+			<SEPARATOR>
+				<SIZE>3, 55</SIZE>
+			</SEPARATOR>
+			<QAT>
+				<SIZE>11, 24</SIZE>
+				<CORNERS>1, 2, 1, 2</CORNERS>
+			</QAT>
+			<BUTTONS>
+				<BUTTON_GROUP_S>
+					<SIZE>20, 22</SIZE>
+					<CORNERS>4, 4, 4, 3</CORNERS>
+				</BUTTON_GROUP_S>
+				<BUTTON_GROUPMENU_F_C>
+					<SIZE>20, 22</SIZE>
+					<CORNERS>4, 4, 4, 3</CORNERS>
+				</BUTTON_GROUPMENU_F_C>
+				<BUTTON_GROUPMENU_L_M>
+					<SIZE>11, 22</SIZE>
+					<CORNERS>3, 4, 4, 3</CORNERS>
+				</BUTTON_GROUPMENU_L_M>
+				<BUTTON_NORMAL_S>
+					<SIZE>20, 22</SIZE>
+					<CORNERS>4, 4, 4, 3</CORNERS>
+				</BUTTON_NORMAL_S>
+				<BUTTON_NORMAL_B>
+					<SIZE>43, 39</SIZE>
+					<CORNERS>4, 4, 4, 16</CORNERS>
+				</BUTTON_NORMAL_B>
+				<BUTTON_DEFAULT>
+					<SIZE>42, 84</SIZE>
+					<CORNERS>1, 1, 3, 1</CORNERS>
+				</BUTTON_DEFAULT>
+				<BUTTON_DEFAULT_ICON>
+					<SIZE>38, 38</SIZE>
+					<CORNERS>6, 6, 6, 6</CORNERS>
+				</BUTTON_DEFAULT_ICON>
+				<BUTTON_DEFAULT_IMAGE>
+					<SIZE>15, 16</SIZE>
+				</BUTTON_DEFAULT_IMAGE>
+				<BUTTON_DEFAULT_QAT>
+					<SIZE>10, 20</SIZE>
+					<CORNERS>4, 3, 4, 4</CORNERS>
+				</BUTTON_DEFAULT_QAT>
+				<BUTTON_MENU_H_C>
+					<SIZE>91, 22</SIZE>
+					<CORNERS>4, 4, 4, 3</CORNERS>
+				</BUTTON_MENU_H_C>
+				<BUTTON_MENU_H_M>
+					<SIZE>11, 22</SIZE>
+					<CORNERS>3, 4, 4, 3</CORNERS>
+				</BUTTON_MENU_H_M>
+				<BUTTON_MENU_V_C>
+					<SIZE>43, 39</SIZE>
+					<CORNERS>4, 4, 4, 2</CORNERS>
+				</BUTTON_MENU_V_C>
+				<BUTTON_MENU_V_M>
+					<SIZE>43, 27</SIZE>
+					<CORNERS>4, 2, 4, 3</CORNERS>
+				</BUTTON_MENU_V_M>
+				<BUTTON_CHECK>
+					<SIZE>13, 13</SIZE>
+				</BUTTON_CHECK>
+				<BUTTON_RADIO>
+					<SIZE>12, 12</SIZE>
+				</BUTTON_RADIO>
+				<BUTTON_PUSH>
+					<SIZE>91, 22</SIZE>
+					<CORNERS>3, 4, 3, 3</CORNERS>
+				</BUTTON_PUSH>
+				<BUTTON_GROUP>
+					<SIZE>7, 7</SIZE>
+					<CORNERS>3, 3, 3, 3</CORNERS>
+					<SIDES>2, 2, 2, 2</SIDES>
+				</BUTTON_GROUP>
+				<BUTTON_PNL_T>
+					<SIZE>15, 21</SIZE>
+					<CORNERS>3, 3, 3, 2</CORNERS>
+				</BUTTON_PNL_T>
+				<BUTTON_PNL_M>
+					<SIZE>15, 19</SIZE>
+					<CORNERS>3, 3, 3, 1</CORNERS>
+				</BUTTON_PNL_M>
+				<BUTTON_PNL_B>
+					<SIZE>15, 20</SIZE>
+					<CORNERS>3, 2, 3, 2</CORNERS>
+				</BUTTON_PNL_B>
+				<BUTTON_MINIMIZE_ICON>
+					<SIZE>11, 11</SIZE>
+				</BUTTON_MINIMIZE_ICON>
+				<BUTTON_GROUP_SEPARATOR>
+					<SIZE>3, 22</SIZE>
+					<CORNERS>1, 2, 1, 1</CORNERS>
+				</BUTTON_GROUP_SEPARATOR>
+			</BUTTONS>
+			<EDIT>
+				<Normal>187, 187, 187</Normal>
+				<Highlighted>204, 204, 204</Highlighted>
+				<Disabled>182, 182, 182</Disabled>
+				<Selection>114, 174, 233</Selection>
+				<BUTTON>
+					<IMAGE>
+						<SIZE>15, 20</SIZE>
+						<CORNERS>2, 2, 2, 2</CORNERS>
+					</IMAGE>
+				</BUTTON>
+			</EDIT>
+			<TextNormal>0, 0, 0</TextNormal>
+			<TextHighlighted>0, 0, 0</TextHighlighted>
+		</PANEL>
+		<CATEGORY>
+			<BACK>
+				<SIZE>3, 92</SIZE>
+				<CORNERS>1, 1, 1, 4</CORNERS>
+			</BACK>
+			<TAB>
+				<BUTTON>
+					<SIZE>13, 24</SIZE>
+					<CORNERS>4, 4, 4, 2</CORNERS>
+				</BUTTON>
+				<TextNormal>226, 226, 226</TextNormal>
+				<TextHighlighted>255, 255, 255</TextHighlighted>
+				<TextActive>0, 0, 0</TextActive>
+			</TAB>
+			<TAB_SEPARATOR>
+				<SIZE>2, 23</SIZE>
+			</TAB_SEPARATOR>
+			<TAB_FRAME>
+				<SIZE>72, 47</SIZE>
+				<CORNERS>15, 1, 55, 1</CORNERS>
+			</TAB_FRAME>
+			<BUTTON_PAGE_L>
+				<SIZE>9, 92</SIZE>
+				<CORNERS>3, 4, 3, 6</CORNERS>
+			</BUTTON_PAGE_L>
+			<BUTTON_PAGE_R>
+				<SIZE>9, 92</SIZE>
+				<CORNERS>3, 4, 3, 6</CORNERS>
+			</BUTTON_PAGE_R>
+		</CATEGORY>
+		<CONTEXT>
+			<CATEGORY>
+				<BACK>
+					<SIZE>3, 92</SIZE>
+					<CORNERS>1, 1, 1, 4</CORNERS>
+				</BACK>
+				<TAB>
+					<BUTTON>
+						<SIZE>19, 24</SIZE>
+						<CORNERS>6, 4, 6, 2</CORNERS>
+					</BUTTON>
+					<GLOW>
+						<SIZE>58, 24</SIZE>
+						<CORNERS>0, 0, 0, 0</CORNERS>
+					</GLOW>
+				</TAB>
+				<CAPTION>
+					<BACK>
+						<SIZE>6, 20</SIZE>
+						<CORNERS>2, 5, 2, 1</CORNERS>
+					</BACK>
+				</CAPTION>
+				<BUTTON_DEFAULT>
+					<SIZE>42, 84</SIZE>
+					<CORNERS>1, 1, 3, 1</CORNERS>
+				</BUTTON_DEFAULT>
+				<PANEL>
+					<SIZE>42, 84</SIZE>
+					<CORNERS>1, 1, 3, 1</CORNERS>
+				</PANEL>
+				<SEPARATOR>
+					<SIZE>30, 24</SIZE>
+					<CORNERS>2, 1, 2, 1</CORNERS>
+				</SEPARATOR>
+			</CATEGORY>
+		</CONTEXT>
+		<CAPTION>
+			<QA>
+				<SIZE>32, 26</SIZE>
+				<CORNERS>3, 8, 3, 7</CORNERS>
+			</QA>
+			<QA_GLASS>
+				<SIZE>32, 26</SIZE>
+				<CORNERS>16, 1, 15, 1</CORNERS>
+			</QA_GLASS>
+		</CAPTION>
+		<MAIN_BUTTON>
+			<SIZE>56, 25</SIZE>
+			<CORNERS>3, 3, 3, 1</CORNERS>
+		</MAIN_BUTTON>
+		<MAIN>
+			<Bkgnd>241, 242, 245</Bkgnd>
+			<BACK>
+				<SIZE>9, 51</SIZE>
+				<CORNERS>1, 24, 1, 17</CORNERS>
+			</BACK>
+			<BORDER>
+				<SIZE>5, 5</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</BORDER>
+			<BUTTON>
+				<SIZE>91, 22</SIZE>
+				<CORNERS>3, 4, 3, 3</CORNERS>
+			</BUTTON>
+		</MAIN>
+		<BACKSTAGE>
+			<PANEL_BACK>
+				<SIZE>7, 100</SIZE>
+				<CORNERS>1, 1, 5, 1</CORNERS>
+			</PANEL_BACK>
+			<BUTTON_NORMAL>
+				<SIZE>12, 22</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+			</BUTTON_NORMAL>
+			<BUTTON_VIEW>
+				<SIZE>95, 43</SIZE>
+				<CORNERS>1, 4, 1, 4</CORNERS>
+			</BUTTON_VIEW>
+			<BUTTON_VIEW_ICON>
+				<SIZE>15, 30</SIZE>
+			</BUTTON_VIEW_ICON>
+			<BUTTON_LIST_ICON>
+				<SIZE>6, 11</SIZE>
+			</BUTTON_LIST_ICON>
+			<BUTTON_PUSH>
+				<SIZE>80, 66</SIZE>
+				<CORNERS>3, 3, 3, 5</CORNERS>
+			</BUTTON_PUSH>
+			<SEPARATOR_HORZ>
+				<SIZE>52, 1</SIZE>
+			</SEPARATOR_HORZ>
+			<SEPARATOR_VERT>
+				<SIZE>1, 216</SIZE>
+			</SEPARATOR_VERT>
+			<TextNormal>255, 255, 255</TextNormal>
+			<TextActive>255, 255, 255</TextActive>
+			<TextDisabled>167, 167, 167</TextDisabled>
+		</BACKSTAGE>
+		<STATUS>
+			<PANE_BUTTON>
+				<SIZE>20, 22</SIZE>
+				<CORNERS>4, 4, 4, 3</CORNERS>
+			</PANE_BUTTON>
+			<SLIDER>
+				<THUMB>
+					<SIZE>11, 15</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB>
+				<THUMB_H>
+					<SIZE>11, 15</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB_H>
+				<THUMB_T>
+					<SIZE>11, 15</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB_T>
+				<THUMB_R>
+					<SIZE>15, 11</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB_R>
+				<THUMB_V>
+					<SIZE>15, 11</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB_V>
+				<THUMB_L>
+					<SIZE>15, 11</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</THUMB_L>
+				<PLUS>
+					<SIZE>18, 18</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</PLUS>
+				<MINUS>
+					<SIZE>18, 18</SIZE>
+					<CORNERS>0, 0, 0, 0</CORNERS>
+				</MINUS>
+			</SLIDER>
+			<PROGRESS>
+				<BACK>
+					<SIZE>90, 12</SIZE>
+					<CORNERS>2, 2, 2, 2</CORNERS>
+				</BACK>
+				<NORMAL>
+					<SIZE>86, 8</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</NORMAL>
+				<NORMAL_EXT>
+					<SIZE>5, 8</SIZE>
+				</NORMAL_EXT>
+				<INFINITY>
+					<SIZE>86, 8</SIZE>
+					<CORNERS>1, 1, 1, 1</CORNERS>
+				</INFINITY>
+			</PROGRESS>
+		</STATUS>
+		<BORDERS>
+			<QAT>
+				<SIZE>7, 7</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+				<SIDES>2, 2, 2, 2</SIDES>
+			</QAT>
+			<FLOATY>
+				<SIZE>7, 7</SIZE>
+				<CORNERS>3, 3, 3, 3</CORNERS>
+				<SIDES>2, 2, 2, 2</SIDES>
+			</FLOATY>
+			<PANEL>
+				<SIZE>3, 85</SIZE>
+				<CORNERS>1, 1, 1, 1</CORNERS>
+			</PANEL>
+		</BORDERS>
+		<KEYTIP>
+			<BACK>
+				<SIZE>15, 15</SIZE>
+				<CORNERS>2, 2, 2, 2</CORNERS>
+				<SIDES>1, 1, 1, 1</SIDES>
+			</BACK>
+		</KEYTIP>
+		<HYPERLINK>
+			<Inactive>0, 102, 226</Inactive>
+			<Active>0, 144, 255</Active>
+		</HYPERLINK>
+	</RIBBON>
+	<PLANNER>
+		<WorkColor>176, 182, 190</WorkColor>
+		<NcAreaColor>238, 238, 244</NcAreaColor>
+		<NcLineColor>76, 83, 92</NcLineColor>
+		<NcTextColor>76, 83, 92</NcTextColor>
+		<TODAY>
+			<Caption1Start>255, 226, 113</Caption1Start>
+			<Caption1Finish>255, 230, 116</Caption1Finish>
+			<Caption2Start>255, 224, 112</Caption2Start>
+			<Caption2Finish>255, 226, 113</Caption2Finish>
+			<BorderColor>235, 137, 0</BorderColor>
+		</TODAY>
+	</PLANNER>
+	<GRID>
+		<HEADER>
+			<NormalStart>186, 186, 186</NormalStart>
+			<NormalFinish>186, 186, 186</NormalFinish>
+			<NormalBorder>68, 68, 68</NormalBorder>
+			<Separator>68, 68, 68</Separator>
+			<ALL_AREA>
+				<NormalBackStart>186, 186, 186</NormalBackStart>
+				<NormalBackFinish>186, 186, 186</NormalBackFinish>
+				<PressedBackStart>186, 186, 186</PressedBackStart>
+				<PressedBackFinish>186, 186, 186</PressedBackFinish>
+				<NormalBorderHighlighted>186, 186, 186</NormalBorderHighlighted>
+				<NormalBorderShadow>186, 186, 186</NormalBorderShadow>
+				<NormalSignStart>148, 148, 148</NormalSignStart>
+				<NormalSignFinish>148, 148, 148</NormalSignFinish>
+			</ALL_AREA>
+		</HEADER>
+		<ExpandBoxLight>144, 168, 192</ExpandBoxLight>
+		<ExpandBoxDark>48, 72, 96</ExpandBoxDark>
+		<LeftOffset>232, 234, 236</LeftOffset>
+		<GroupLine>145, 153, 164 </GroupLine>
+		<GroupSubLine>227, 239, 255</GroupSubLine>
+		<COLORS>
+			<COLOR_H_LINE>80, 80, 80</COLOR_H_LINE>
+			<COLOR_V_LINE>80, 80, 80</COLOR_V_LINE>
+			<EVEN_COLORS>
+				<COLOR_FILL>217, 217, 217</COLOR_FILL>
+				<COLOR_TEXT>0, 0, 0</COLOR_TEXT>
+			</EVEN_COLORS>
+			<ODD_COLORS>
+				<COLOR_FILL>166, 166, 166</COLOR_FILL>
+				<COLOR_TEXT>0, 0, 0</COLOR_TEXT>
+			</ODD_COLORS>
+			<SEL_COLORS>
+				<COLOR_FILL>158, 194, 230</COLOR_FILL>
+				<COLOR_TEXT>0, 0, 0</COLOR_TEXT>
+			</SEL_COLORS>
+			<GROUP_COLORS>
+				<COLOR_FILL>80, 80, 80</COLOR_FILL>
+				<COLOR_TEXT>226, 226, 226</COLOR_TEXT>
+			</GROUP_COLORS>
+			<GROUP_SEL_COLORS>
+				<COLOR_FILL>255, 239, 113</COLOR_FILL>
+				<COLOR_FILLGRADIENT>255, 211, 89</COLOR_FILLGRADIENT>
+				<COLOR_BORDER>194, 138, 48</COLOR_BORDER>
+				<COLOR_TEXT>0, 0, 0</COLOR_TEXT>
+			</GROUP_SEL_COLORS>
+			<HEADER_COLORS>
+				<COLOR_FILL>106, 106, 106</COLOR_FILL>
+				<COLOR_BORDER>80, 80, 80</COLOR_BORDER>
+				<COLOR_TEXT>226, 226, 226</COLOR_TEXT>
+			</HEADER_COLORS>
+			<HEADER_SEL_COLORS>
+				<COLOR_FILL>255, 239, 113</COLOR_FILL>
+				<COLOR_FILLGRADIENT>255, 211, 89</COLOR_FILLGRADIENT>
+				<COLOR_BORDER>194, 138, 48</COLOR_BORDER>
+				<COLOR_TEXT>0, 0, 0</COLOR_TEXT>
+			</HEADER_SEL_COLORS>
+			<OFFSET_COLORS>
+				<COLOR_FILL>166, 166, 166</COLOR_FILL>
+				<COLOR_BORDER>166, 166, 166</COLOR_BORDER>
+			</OFFSET_COLORS>
+		</COLORS>
+	</GRID>
+	<OUTLOOK>
+		<CAPTION>
+			<TextNormal>0, 0, 0</TextNormal>
+		</CAPTION>
+		<PAGEBUTTON>
+			<BACK>
+				<SIZE>133, 33</SIZE>
+				<CORNERS>4, 3, 4, 5</CORNERS>
+			</BACK>
+			<TextNormal>255, 255, 255</TextNormal>
+			<TextHighlighted>255, 255, 255</TextHighlighted>
+			<TextPressed>255, 255, 255</TextPressed>
+		</PAGEBUTTON>
+		<SPLITTER>
+			<BACK>
+				<SIZE>133, 6</SIZE>
+				<CORNERS>2, 1, 2, 2</CORNERS>
+			</BACK>
+		</SPLITTER>
+		<BAR>
+			<BACK>
+				<SIZE>54, 31</SIZE>
+				<CORNERS>1, 4, 1, 6</CORNERS>
+			</BACK>
+		</BAR>
+	</OUTLOOK>
+	<POPUP>
+		<GradientFillDark>188, 193, 200</GradientFillDark>
+		<GradientFillLight>227, 230, 232</GradientFillLight>
+	</POPUP>
+	<SLIDER>
+		<THUMB_B>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_B>
+		<THUMB_H>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_H>
+		<THUMB_T>
+			<SIZE>11, 22</SIZE>
+			<CORNERS>5, 10, 5, 6</CORNERS>
+		</THUMB_T>
+		<THUMB_R>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_R>
+		<THUMB_V>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_V>
+		<THUMB_L>
+			<SIZE>22, 11</SIZE>
+			<CORNERS>10, 5, 6, 5</CORNERS>
+		</THUMB_L>
+	</SLIDER>
+	<CALCULATOR>
+		<BUTTON>
+			<SIZE>20, 22</SIZE>
+			<CORNERS>4, 4, 4, 3</CORNERS>
+		</BUTTON>
+		<TextNumber>0, 0, 0</TextNumber>
+	</CALCULATOR>
+</STYLE>

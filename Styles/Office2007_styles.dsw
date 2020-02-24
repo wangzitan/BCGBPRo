@@ -1,0 +1,164 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Carbon"=.\BCGPStyleCarbon.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2007 (aqua)"=.\BCGPStyle2007Aqua.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2007 (luna)"=.\BCGPStyle2007Luna.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2007 (obsidian)"=.\BCGPStyle2007Obsidian.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2007 (silver)"=.\BCGPStyle2007Silver.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2010 (black)"=.\BCGPStyle2010Black.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2010 (blue)"=.\BCGPStyle2010Blue.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Office 2010 (white)"=.\BCGPStyle2010White.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Scenic"=.\BCGPStyleScenic.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "build_all"=.\build_all.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Office 2007 (aqua)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2007 (luna)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2007 (obsidian)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2007 (silver)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Scenic
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Carbon
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2010 (white)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2010 (blue)
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Office 2010 (black)
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

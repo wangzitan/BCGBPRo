@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <BCGSoft_VersionMajor>28</BCGSoft_VersionMajor>
+    <BCGSoft_VersionMinor>00</BCGSoft_VersionMinor>
+    <BCGSoft_Version>$(BCGSoft_VersionMajor)$(BCGSoft_VersionMinor)</BCGSoft_Version>
+    <BCGSoft_IntDirSuffix>$(Platform)\$(VisualStudioVersion)\$(PlatformToolset)\$(Configuration)\</BCGSoft_IntDirSuffix>
+    <BCGSoft_OutDirX86>..\Bin\</BCGSoft_OutDirX86>
+    <BCGSoft_OutDirX64>..\Bin64\</BCGSoft_OutDirX64>
+    <BCGSoft_OutDirARM>..\BinARM\</BCGSoft_OutDirARM>
+    <BCGSoft_OutDirARM64>..\BinARM64\</BCGSoft_OutDirARM64>
+    <BCGSoft_ProductName>BCGCBPRO$(BCGSoft_Version)</BCGSoft_ProductName>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="BCGSoft_VersionMajor">
+      <Value>$(BCGSoft_VersionMajor)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_VersionMinor">
+      <Value>$(BCGSoft_VersionMinor)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_Version">
+      <Value>$(BCGSoft_Version)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_IntDirSuffix">
+      <Value>$(BCGSoft_IntDirSuffix)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_OutDirX86">
+      <Value>$(BCGSoft_OutDirX86)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_OutDirX64">
+      <Value>$(BCGSoft_OutDirX64)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_OutDirARM">
+      <Value>$(BCGSoft_OutDirARM)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_OutDirARM64">
+      <Value>$(BCGSoft_OutDirARM64)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BCGSoft_ProductName">
+      <Value>$(BCGSoft_ProductName)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

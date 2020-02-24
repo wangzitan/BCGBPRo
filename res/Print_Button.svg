@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>Print</title>
+  <g id="BCG-largeIcons">
+    <g id="Print">
+      <path d="M28,11H25v6H7V11H4a2.15,2.15,0,0,0-2,2v9a2.15,2.15,0,0,0,2,2H28a2.15,2.15,0,0,0,2-2V13A2.15,2.15,0,0,0,28,11Zm0,11H26V20h2Z" style="fill: gray"/>
+      <g>
+        <g>
+          <polygon points="9.47 28.53 9.47 20.47 22.5 20.47 22.53 28.53 9.47 28.53" style="fill: #fff"/>
+          <path d="M22,20.93l0,7.14H9.93V20.93H22M23,20H9v9H23l0-9Z" style="fill: gray"/>
+        </g>
+        <rect x="12" y="23" width="8" height="1" style="fill: #4d82b8"/>
+        <rect x="12" y="25" width="8" height="1" style="fill: #4d82b8"/>
+      </g>
+      <g>
+        <rect x="8" y="11" width="16" height="5" style="fill: #4d82b8"/>
+        <g>
+          <rect x="9.5" y="4.5" width="13" height="8" style="fill: #fff"/>
+          <path d="M22,5v7H10V5H22m1-1H9v9H23V4Z" style="fill: gray"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

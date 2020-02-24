@@ -1,0 +1,76 @@
+//
+// STYLE.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Style
+//
+
+#if defined(_BCGP_STYLE_DLL_)
+    IDX_BCG_STYLE             STYLE_XML       "Carbon\\Style.xml"
+#else
+    CARBON_IDX_BCG_STYLE      STYLE_XML       "Carbon\\Style.xml"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+CARBON_MAINBRD_CAPTION    PNG DISCARDABLE "Carbon\\MainWnd\\BorderCaption.png"
+CARBON_MAINBRD_L          PNG DISCARDABLE "Carbon\\MainWnd\\BorderL.png"
+CARBON_MAINBRD_R          PNG DISCARDABLE "Carbon\\MainWnd\\BorderR.png"
+CARBON_MAINBRD_TB         PNG DISCARDABLE "Carbon\\MainWnd\\BorderTB.png"
+CARBON_MAINBRD            PNG DISCARDABLE "Carbon\\MainWnd\\Border.png"
+CARBON_MDICHILDBRD        PNG DISCARDABLE "Carbon\\MainWnd\\BorderMDIChild.png"
+CARBON_MINIBRD_CAPTION    PNG DISCARDABLE "Carbon\\MainWnd\\BorderMiniCaption.png"
+CARBON_MINIBRD_TB         PNG DISCARDABLE "Carbon\\MainWnd\\BorderMiniTB.png"
+CARBON_MINIBRD            PNG DISCARDABLE "Carbon\\MainWnd\\BorderMini.png"
+CARBON_SYS_BTN_BACK       PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Back.png"
+CARBON_SYS_BTN_BACK_H     PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Back_H.png"
+CARBON_SYS_BTN_BACK_C     PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Back_C.png"
+CARBON_SYS_BTN_BACK_C_H   PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Back_C_H.png"
+CARBON_SYS_BTN_CLOSE      PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Close.png"
+CARBON_SYS_BTN_MINIMIZE   PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Minimize.png"
+CARBON_SYS_BTN_MAXIMIZE   PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Maximize.png"
+CARBON_SYS_BTN_RESTORE    PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Restore.png"
+CARBON_SYS_BTN_HELP       PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Help.png"
+
+CARBON_SB_BACK            PNG DISCARDABLE "Carbon\\StatusBar\\Back.png"
+CARBON_SB_BACK_EXT        PNG DISCARDABLE "Carbon\\StatusBar\\Back_Ext.png"
+CARBON_SB_SIZEBOX         PNG DISCARDABLE "Carbon\\StatusBar\\SizeGrip.png"
+CARBON_SB_PANEBRD         PNG DISCARDABLE "Carbon\\StatusBar\\PaneBorder.png"
+//CARBON_SYS_BTN_BACK_S     PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Back.png"
+//CARBON_SYS_BTN_CLOSE_S    PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Close_S.png"
+//CARBON_SYS_BTN_MINIMIZE_S PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Minimize_S.png"
+//CARBON_SYS_BTN_MAXIMIZE_S PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Maximize_S.png"
+//CARBON_SYS_BTN_RESTORE_S  PNG DISCARDABLE "Carbon\\AppCaption\\SysBtn_Restore_S.png"
+CARBON_MB_BTN             PNG DISCARDABLE "Carbon\\MenuBar\\Btn.png"
+CARBON_POPMENU_BRD        PNG DISCARDABLE "Carbon\\PopupBar\\Border.png"
+CARBON_GRIPPER            PNG DISCARDABLE "Carbon\\PopupBar\\Gripper.png"
+CARBON_TEAR               PNG DISCARDABLE "Carbon\\PopupBar\\Tear.png"
+CARBON_MINI_SYS_BTN       PNG DISCARDABLE "Carbon\\PopupBar\\btnCaption.png"
+CARBON_MENU_ITEM_BACK     PNG DISCARDABLE "Carbon\\PopupBar\\Item_Back.png"
+CARBON_MENU_ITEM_MARKER_C PNG DISCARDABLE "Carbon\\PopupBar\\Item_Marker_C.png"
+CARBON_MENU_ITEM_MARKER_R PNG DISCARDABLE "Carbon\\PopupBar\\Item_Marker_R.png"
+CARBON_TB_BTN             PNG DISCARDABLE "Carbon\\ToolBar\\Btn.png"
+
+CARBON_RB_BTN_PUSH        PNG DISCARDABLE "Carbon\\Ribbon\\Buttons\\Push.png"
+CARBON_RB_BTN_GRP         PNG DISCARDABLE "Carbon\\Ribbon\\Buttons\\Group.png"
+
+
+#endif

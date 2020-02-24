@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <title>Back</title>
+  <g id="BCG-largeIcons">
+    <g id="Back">
+      <g id="_Ellipse_" data-name="&lt;Ellipse&gt;">
+        <path d="M17.5,2A15.5,15.5,0,1,1,2,17.5,15.51,15.51,0,0,1,17.5,2m0-2A17.5,17.5,0,1,0,35,17.5,17.5,17.5,0,0,0,17.5,0Z" style="fill: #fff"/>
+      </g>
+      <polygon points="26 18.5 26 16.5 13 16.5 18 11.5 15 11.5 9 17.5 15 23.5 18 23.5 13 18.5 26 18.5" style="fill: #fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <title>Print_1</title>
+  <g id="BCG-largeIcons">
+    <g id="Print">
+      <path d="M15,4H13V6H3V4H1A1,1,0,0,0,0,5v6a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V5A1,1,0,0,0,15,4Z" style="fill: #727272"/>
+      <rect x="13" y="10" width="1" height="1" style="fill: #727272"/>
+      <g>
+        <rect x="4.5" y="9.5" width="7" height="5" style="fill: #fff"/>
+        <path d="M11,10v4H5V10h6m1-1H4v6h8V9Z" style="fill: #727272"/>
+      </g>
+      <g>
+        <rect x="4.5" y="0.5" width="7" height="4" style="fill: #fff"/>
+        <path d="M11,1V4H5V1h6m1-1H4V5h8V0Z" style="fill: #727272"/>
+      </g>
+    </g>
+  </g>
+</svg>

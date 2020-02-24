@@ -1,0 +1,118 @@
+//
+// STYLE.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Style
+//
+
+#if defined(_BCGP_STYLE_DLL_)
+    IDX_BCG_STYLE               STYLE_XML       "Scenic\\Style.xml"
+#else
+    SCENIC_IDX_BCG_STYLE        STYLE_XML       "Scenic\\Style.xml"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+SCENIC_COMBOBOX_BTN         PNG DISCARDABLE "Scenic\\ComboBox\\Btn.png"
+
+SCENIC_RB_CAT_BACK          PNG DISCARDABLE "Scenic\\Ribbon\\Category_Back.png"
+SCENIC_RB_CAT_TAB           PNG DISCARDABLE "Scenic\\Ribbon\\Category_Tab.png"
+SCENIC_RB_CAT_TAB_SEP       PNG DISCARDABLE "Scenic\\Ribbon\\Category_Tab_Sep.png"
+SCENIC_RB_CAT_TAB_FRAME     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Tab_Frame.png"
+SCENIC_RB_PNL_BACK          PNG DISCARDABLE "Scenic\\Ribbon\\Panel_Back.png"
+SCENIC_RB_PNL_BACK_SEP      PNG DISCARDABLE "Scenic\\Ribbon\\Panel_Back_Sep.png"
+
+SCENIC_MENU_BTN             PNG DISCARDABLE "Scenic\\PopupBar\\MenuHighlight.png"
+SCENIC_MENU_BTN_DISABLED    PNG DISCARDABLE "Scenic\\PopupBar\\MenuHighlightDisabled.png"
+SCENIC_MENU_ITEM_BACK       PNG DISCARDABLE "Scenic\\PopupBar\\Item_Back.png"
+SCENIC_MENU_ITEM_MARKER_C   PNG DISCARDABLE "Scenic\\PopupBar\\Item_Marker_C.png"
+SCENIC_MENU_ITEM_MARKER_R   PNG DISCARDABLE "Scenic\\PopupBar\\Item_Marker_R.png"
+SCENIC_POPMENU_BRD          PNG DISCARDABLE "Scenic\\PopupBar\\Border.png"
+SCENIC_POPMENU_RSB          PNG DISCARDABLE "Scenic\\PopupBar\\ResizeBar.png"
+SCENIC_POPMENU_RSB_ICON_HV  PNG DISCARDABLE "Scenic\\PopupBar\\ResizeBar_HV.png"
+SCENIC_POPMENU_RSB_ICON_HVT PNG DISCARDABLE "Scenic\\PopupBar\\ResizeBar_HVT.png"
+SCENIC_POPMENU_RSB_ICON_V   PNG DISCARDABLE "Scenic\\PopupBar\\ResizeBar_V.png"
+
+SCENIC_RB_BTN_GRP_F         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Group_F.png"
+SCENIC_RB_BTN_GRP_M         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Group_M.png"
+SCENIC_RB_BTN_GRP_L         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Group_L.png"
+SCENIC_RB_BTN_GRP_S         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Group_S.png"
+SCENIC_RB_BTN_NORMAL_S      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Normal_S.png"
+SCENIC_RB_BTN_NORMAL_B      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Normal_B.png"
+SCENIC_RB_BTN_LAUNCH        PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Launch.png"
+SCENIC_RB_BTN_LAUNCH_ICON   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Launch_Icon.png"
+SCENIC_RB_PNL_SEPARATOR     PNG DISCARDABLE "Scenic\\Ribbon\\Separator.png"
+SCENIC_RB_PNL_MAIN          PNG DISCARDABLE "Scenic\\Ribbon\\Panel_Main.png"
+SCENIC_RB_BTN_MAIN          PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Main.png"
+SCENIC_RB_BTN_DEF           PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Default.png"
+SCENIC_RB_BTN_DEF_ICON      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Default_Icon.png"
+SCENIC_RB_BTN_DEF_IMAGE     PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Default_Image.png"
+SCENIC_RB_BTN_MENU_H_C      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Menu_H_C.png"
+SCENIC_RB_BTN_MENU_H_M      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Menu_H_M.png"
+SCENIC_RB_BTN_MENU_V_C      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Menu_V_C.png"
+SCENIC_RB_BTN_MENU_V_M      PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Menu_V_M.png"
+SCENIC_RB_BTN_GRPMENU_F_C   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_F_C.png"
+SCENIC_RB_BTN_GRPMENU_F_M   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_F_M.png"
+SCENIC_RB_BTN_GRPMENU_M_C   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_M_C.png"
+SCENIC_RB_BTN_GRPMENU_M_M   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_M_M.png"
+SCENIC_RB_BTN_GRPMENU_L_C   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_L_C.png"
+SCENIC_RB_BTN_GRPMENU_L_M   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\GroupMenu_L_M.png"
+SCENIC_RB_BTN_CHECK         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Check.png"
+SCENIC_RB_BTN_RADIO         PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Radio.png"
+SCENIC_RB_BTN_PALETTE_T     PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Palette_T.png"
+SCENIC_RB_BTN_PALETTE_M     PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Palette_M.png"
+SCENIC_RB_BTN_PALETTE_B     PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Palette_B.png"
+SCENIC_RB_BTN_STATUS_PANE   PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\StatusPane.png"
+SCENIC_RB_SLIDER_BTN_PLUS   PNG DISCARDABLE "Scenic\\Ribbon\\Slider\\Plus.png"
+SCENIC_RB_SLIDER_BTN_MINUS  PNG DISCARDABLE "Scenic\\Ribbon\\Slider\\Minus.png"
+SCENIC_RB_BTN_DEF_QAT       PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Default_QAT.png"
+SCENIC_RB_BTN_PAGE_L        PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Page_L.png"
+SCENIC_RB_BTN_PAGE_R        PNG DISCARDABLE "Scenic\\Ribbon\\Buttons\\Page_R.png"
+SCENIC_RB_BRD_QAT           PNG DISCARDABLE "Scenic\\Ribbon\\Border_QAT.png"
+SCENIC_RB_BRD_FLOATY        PNG DISCARDABLE "Scenic\\Ribbon\\Border_Floaty.png"
+SCENIC_RB_BRD_PANEL         PNG DISCARDABLE "Scenic\\Ribbon\\Border_Panel.png"
+SCENIC_RB_KEYTIP_BACK       PNG DISCARDABLE "Scenic\\Ribbon\\KeyTip.png"
+SCENIC_RB_CAPTION_QA        PNG DISCARDABLE "Scenic\\Ribbon\\Caption_QA.png"
+
+SCENIC_RB_CTX_SEPARATOR     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Separator.png"
+SCENIC_RB_CTX_R_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Red\\Tab.png"
+SCENIC_RB_CTX_R_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Red\\Caption.png"
+SCENIC_RB_CTX_R_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Red\\Back.png"
+SCENIC_RB_CTX_O_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Orange\\Tab.png"
+SCENIC_RB_CTX_O_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Orange\\Caption.png"
+SCENIC_RB_CTX_O_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Orange\\Back.png"
+SCENIC_RB_CTX_Y_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Yellow\\Tab.png"
+SCENIC_RB_CTX_Y_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Yellow\\Caption.png"
+SCENIC_RB_CTX_Y_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Yellow\\Back.png"
+SCENIC_RB_CTX_G_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Green\\Tab.png"
+SCENIC_RB_CTX_G_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Green\\Caption.png"
+SCENIC_RB_CTX_G_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Green\\Back.png"
+SCENIC_RB_CTX_B_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Blue\\Tab.png"
+SCENIC_RB_CTX_B_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Blue\\Caption.png"
+SCENIC_RB_CTX_B_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Blue\\Back.png"
+SCENIC_RB_CTX_I_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Indigo\\Tab.png"
+SCENIC_RB_CTX_I_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Indigo\\Caption.png"
+SCENIC_RB_CTX_I_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Indigo\\Back.png"
+SCENIC_RB_CTX_V_CAT_TAB     PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Violet\\Tab.png"
+SCENIC_RB_CTX_V_CAT_CAPTION PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Violet\\Caption.png"
+SCENIC_RB_CTX_V_CAT_BACK    PNG DISCARDABLE "Scenic\\Ribbon\\Category_Context\\Violet\\Back.png"
+
+#endif

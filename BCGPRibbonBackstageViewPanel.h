@@ -294,6 +294,19 @@ public:
 	void FillList(const CStringArray& arRecent, const CStringArray& arPinned, LPCTSTR lpszSelectedPath = NULL);
 
 	BOOL CloseBackstageView();
+	void SetCaption(CString strCaption) { m_strCaption = strCaption; };
+	void AllowShowCaption(BOOL bSet = TRUE) { m_bShowCaption = bSet; };
+	void EnableTabstops(BOOL bSet = TRUE) 
+	{
+		if (bSet)
+		{
+			ModifyStyle(0, LBS_USETABSTOPS);
+		}
+		else 
+		{
+			ModifyStyle(LBS_USETABSTOPS, 0);
+		}
+	}
 
 // Overrides
 	// ClassWizard generated virtual function overrides
@@ -327,6 +340,9 @@ protected:
 
 	CArray<HICON, HICON>	m_arIcons;
 	BOOL					m_bFoldersMode;
+	BOOL					m_bShowCaption;
+	CString					m_strCaption;
+	CStringArray			m_arCustomizeInfo;
 };
 
 #endif // BCGP_EXCLUDE_RIBBON

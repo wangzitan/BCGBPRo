@@ -700,7 +700,9 @@ void CBCGPListBox::OnDrawItemContent(CDC* pDC, CRect rect, int nIndex)
 				
 				LONG lfHeightSaved = lf.lfHeight;
 
-				lf.lfHeight = (long) ((2. + abs (lf.lfHeight)) * 3 / 2);
+				//wlg edit,the font is to big
+				//lf.lfHeight = (long) ((2. + abs (lf.lfHeight)) * 3 / 2);
+				lf.lfHeight = (long) (( abs (lf.lfHeight)) * 4 / 3);
 				if (lfHeightSaved < 0)
 				{
 					lf.lfHeight = -lf.lfHeight;
@@ -753,7 +755,8 @@ void CBCGPListBox::OnDrawItemContent(CDC* pDC, CRect rect, int nIndex)
 			ctrl.m_bBackstageMode = m_bBackstageMode;
 
 			CRect rectSeparator = rect;
-			rectSeparator.top = rect.CenterPoint().y + nTextHeight / 2;
+			//rectSeparator.top = rect.CenterPoint().y + nTextHeight / 2;
+			rectSeparator.top = rectSeparator.bottom-2;
 			rectSeparator.bottom = rectSeparator.top + 1;
 			rectSeparator.right -= nHorzMargin + 1;
 

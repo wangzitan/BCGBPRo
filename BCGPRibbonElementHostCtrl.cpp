@@ -427,6 +427,7 @@ IMPLEMENT_DYNAMIC(CBCGPNewDocumentGalleryCtrl, CBCGPRibbonGalleryCtrl)
 CBCGPNewDocumentGalleryCtrl::CBCGPNewDocumentGalleryCtrl()
 {
 	m_nTemplatesGroupStartIndex = -1;
+	m_bUseCustomizeIcon = FALSE;
 	m_sizeTemplatePadding = CSize(0, 0);
 }
 //**************************************************************************
@@ -509,34 +510,47 @@ void CBCGPNewDocumentGalleryCtrl::NotifyCommand(BOOL bByMouseClick)
 void CBCGPNewDocumentGalleryCtrl::OnDrawGalleryItem (CDC* pDC, CRect rect, int nIconIndex, CBCGPRibbonPaletteIcon* pIcon, COLORREF clrText)
 {
 	int nTemplateIndex = nIconIndex - m_nTemplatesGroupStartIndex;
-	
+	rect.top += globalUtils.ScaleByDPI(40);
+
 	int nImageHeight = 0;
-
-	rect.DeflateRect(globalUtils.ScaleByDPI(m_sizeTemplatePadding.cx), globalUtils.ScaleByDPI(m_sizeTemplatePadding.cy));
-
-	if (nTemplateIndex >= 0 && m_nTemplatesGroupStartIndex < (int)m_arTemplates.GetSize())
-	{
-		CBCGPMultiDocTemplate* pTemplate = m_arTemplates[nTemplateIndex];
-
-		HICON hIcon = AfxGetApp()->LoadIcon (pTemplate->GetResId ());
-		if (hIcon == NULL)
-		{
-			hIcon = ::LoadIcon(NULL, IDI_APPLICATION);
-		}
 	
-		if (hIcon != NULL)
+	if (!m_bUseCustomizeIcon)
+	{
+		rect.DeflateRect(globalUtils.ScaleByDPI(m_sizeTemplatePadding.cx), globalUtils.ScaleByDPI(m_sizeTemplatePadding.cy));
+		if (nTemplateIndex >= 0 && m_nTemplatesGroupStartIndex < (int)m_arTemplates.GetSize())
 		{
-			CSize size = globalUtils.GetIconSize(hIcon);
+			CBCGPMultiDocTemplate* pTemplate = m_arTemplates[nTemplateIndex];
 
-			::DrawIconEx(pDC->GetSafeHdc(), rect.left + max(0, (rect.Width() - size.cx) / 2), rect.top, hIcon, 
-				size.cx, size.cy, NULL, (HBRUSH)NULL, DI_NORMAL);
+			HICON hIcon = AfxGetApp()->LoadIcon (pTemplate->GetResId ());
+			if (hIcon == NULL)
+			{
+				hIcon = ::LoadIcon(NULL, IDI_APPLICATION);
+			}
+	
+			if (hIcon != NULL)
+			{
+				CSize size = globalUtils.GetIconSize(hIcon);
 
-			nImageHeight = size.cy + globalUtils.ScaleByDPI(m_sizeTemplatePadding.cy);
+				::DrawIconEx(pDC->GetSafeHdc(), rect.left + max(0, (rect.Width() - size.cx) / 2), rect.top, hIcon, 
+					size.cx, size.cy, NULL, (HBRUSH)NULL, DI_NORMAL);
+
+				nImageHeight = size.cy + globalUtils.ScaleByDPI(m_sizeTemplatePadding.cy);
+			}
+		}
+	}
+	else
+	{
+		if (nIconIndex < m_arIcons.GetSize())
+		{
+			m_arIcons[nIconIndex].DrawEx(pDC, rect, 0, CBCGPToolBarImages::ImageAlignHorzCenter, CBCGPToolBarImages::ImageAlignVertTop, CRect(0, 0, 0, 0),
+				(BYTE)(IsWindowEnabled() ? 255 : 100));
+
+			nImageHeight = m_arIcons[nIconIndex].GetImageSize().cy;
 		}
 	}
 
 	CRect rectText = rect;
-	rectText.top += nImageHeight;
+	rectText.top += nImageHeight+10;
 	
 	COLORREF clrTextOld = (COLORREF)-1;
 
@@ -545,6 +559,7 @@ void CBCGPNewDocumentGalleryCtrl::OnDrawGalleryItem (CDC* pDC, CRect rect, int n
 		clrTextOld = pDC->SetTextColor(clrText);
 	}
 
+	CString str = m_PaletteButton.GetIconTextLabel(pIcon);
 	pDC->DrawText(m_PaletteButton.GetIconTextLabel(pIcon), rectText, DT_WORDBREAK | DT_END_ELLIPSIS | DT_CENTER);
 
 	if (clrTextOld != (COLORREF)-1)
@@ -552,5 +567,35 @@ void CBCGPNewDocumentGalleryCtrl::OnDrawGalleryItem (CDC* pDC, CRect rect, int n
 		pDC->SetTextColor(clrTextOld);
 	}
 }
+
+// wlg add 2020-3-1
+void CBCGPNewDocumentGalleryCtrl::SetIconSize(CSize sizeItem, CSize sizePadding)
+{
+	CBCGPRibbonGalleryCtrl::SetIconSize(sizeItem);
+	m_sizeTemplatePadding = sizePadding;
+}
+
+//wlg add 2020-3-1
+void CBCGPNewDocumentGalleryCtrl::SetupItem(int nIndex, const CString& strName, UINT nImageResID)
+{
+	SIZE sz;
+	sz.cx = 96;
+	sz.cy = 96;
+	if (nIndex >= m_arIcons.GetSize())
+	{
+		m_arIcons.SetSize(nIndex + 1);
+
+		m_arIcons[nIndex].SetMapTo3DColors(FALSE);
+		m_arIcons[nIndex].Load(nImageResID);
+		m_arIcons[nIndex].SetSingleImage();
+		m_arIcons[nIndex].SetImageSize(sz);
+		globalUtils.ScaleByDPI(m_arIcons[nIndex]);
+	}
+
+	m_PaletteButton.SetItemToolTip(nIndex, strName);
+}
+
+//wlg add 2020-3-1
+CArray<CBCGPToolBarImages, const CBCGPToolBarImages&> CBCGPNewDocumentGalleryCtrl::m_arIcons;
 
 #endif // BCGP_EXCLUDE_RIBBON

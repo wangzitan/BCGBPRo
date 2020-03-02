@@ -76,6 +76,28 @@ public:
 		return m_PaletteButton.m_bDrawSelectionAlways;
 	}
 
+	//wlg add 2020-3-1
+	void SetIconSize(CSize sizeItem)
+	{
+		m_PaletteButton.m_bIsOwnerDraw = TRUE;
+		m_PaletteButton.m_imagesPalette.SetImageSize(globalUtils.ScaleByDPI(sizeItem));
+	}
+
+	//wlg add 2020-3-1
+	void AddDocIcon(int nNum)
+	{
+		m_PaletteButton.m_nIcons += nNum;
+		RecalcLayout();
+	}
+
+	//wlg add 2020-3-1
+	CString GetIconLabel(int nIcon) const
+	{
+		CString str = m_PaletteButton.GetItemToolTip(nIcon);
+		return str;
+	}
+
+
 // Operations
 public:
 	void AddGroup (
@@ -191,6 +213,16 @@ public:
 	int AddApplicationDocTemplates(const CString strGroupName, CSize sizeItem = CSize(96, 96), CSize sizePadding = CSize(10, 10));
 	BOOL CloseBackstageView();
 
+	void SetIconSize(CSize sizeItem = CSize(96, 96), CSize sizePadding = CSize(10, 10));
+
+	//wlg add 2020-3-1
+	void SetupItem(int nIndex, const CString& strName, UINT nImageResID);
+	void UseCustomizeIcon(BOOL bSet = TRUE)
+	{
+		m_bUseCustomizeIcon = bSet;
+	}
+
+
 protected:
 	virtual void NotifyCommand(BOOL bByMouseClick);
 	virtual void OnDrawGalleryItem (CDC* pDC, CRect rectIcon, int nIconIndex, CBCGPRibbonPaletteIcon* pIcon, COLORREF clrText);
@@ -198,6 +230,9 @@ protected:
 	CArray<CBCGPMultiDocTemplate*, CBCGPMultiDocTemplate*>	m_arTemplates;
 	int														m_nTemplatesGroupStartIndex;
 	CSize													m_sizeTemplatePadding;
+	//wlg add 2020-3-1
+	static CArray<CBCGPToolBarImages, const CBCGPToolBarImages&> m_arIcons;
+	BOOL m_bUseCustomizeIcon;
 };
 
 #endif // BCGP_EXCLUDE_RIBBON

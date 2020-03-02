@@ -1621,6 +1621,9 @@ CBCGPRecentFilesListBox::CBCGPRecentFilesListBox()
 {
 	m_bVisualManagerStyle = TRUE;
 	m_bFoldersMode = FALSE;
+	m_strCaption = "";
+	m_bShowCaption = FALSE;
+	m_arCustomizeInfo.RemoveAll();
 }
 
 CBCGPRecentFilesListBox::~CBCGPRecentFilesListBox()
@@ -1647,11 +1650,12 @@ END_MESSAGE_MAP()
 
 void CBCGPRecentFilesListBox::OnDrawItemContent(CDC* pDC, CRect rect, int nIndex)
 {
-	if (IsSeparatorItem(nIndex))
+	if (IsSeparatorItem(nIndex)||IsCaptionItem(nIndex))
 	{
 		CBCGPListBox::OnDrawItemContent(pDC, rect, nIndex);
 		return;
 	}
+
 
 	if (nIndex >= 0 && nIndex < m_arIcons.GetSize())
 	{
@@ -1675,33 +1679,55 @@ void CBCGPRecentFilesListBox::OnDrawItemContent(CDC* pDC, CRect rect, int nIndex
 
 	CString strText;
 	GetText (nIndex, strText);
+	CString strName;
+	CString strPath;
 
-	int nPathIndex = strText.Find(_T("\n"));
-	if (nPathIndex < 0)
+	if (!AfxExtractSubString(strName, (LPCTSTR)strText, 0, '\n'))
 	{
 		pDC->DrawText (strText, rectText, DT_LEFT);
 	}
 	else
 	{
-		CString strName = strText.Left(nPathIndex);
-		CString strPath = strText.Mid(nPathIndex + 1);
-
-		const int nMargin = max(0, (rectText.Height() - pDC->GetTextExtent(strName).cy - pDC->GetTextExtent(strPath).cy) / 3);
+		AfxExtractSubString(strPath, (LPCTSTR)strText, 1, '\n');
+		int nMargin = max(0, (rectText.Height() - pDC->GetTextExtent(strName).cy - pDC->GetTextExtent(strPath).cy) / 3);
 
 		UINT uiDTFlags = DT_SINGLELINE | DT_END_ELLIPSIS;
-			
-		CFont* pOldFont = pDC->SelectObject (&globalData.fontBold);
-		ASSERT (pOldFont != NULL);
+
+		CFont* pOldFont = pDC->SelectObject(&globalData.fontBold);
+		ASSERT(pOldFont != NULL);
 
 		rectText.top += nMargin;
 
+		const int nTabStops = (int)m_arTabStops.GetSize();
+		if ((GetStyle() & LBS_USETABSTOPS) != 0 || nTabStops > 0)
+		{
+			rectText.right = rectText.left + m_arTabStops[0];
+		}		
+
 		int nTextHeight = pDC->DrawText(strName, rectText, uiDTFlags);
 
-		pDC->SelectObject (pOldFont);
-
+		pDC->SelectObject(pOldFont);
 		rectText.top += nTextHeight + nMargin;
-
 		pDC->DrawText(strPath, rectText, uiDTFlags);
+
+
+		//draw CustomizeInfo
+		rectText = rect;
+		nMargin = max(0, (rectText.Height() - pDC->GetTextExtent(strName).cy) / 2);
+		rectText.top = rect.top+ nMargin;
+		rectText.right = rectText.left;
+		if ((GetStyle() & LBS_USETABSTOPS) != 0)
+		{
+			int i;
+			CString strTemp;
+			for (i = 0; i < nTabStops-1; i++)
+			{
+				AfxExtractSubString(strTemp, (LPCTSTR)strText, i+2, '\n');	//1st=filename 2nd=path,3th = customize info
+				rectText.left = rect.left + m_arTabStops[i];
+				rectText.right = rect.left + m_arTabStops[i+1];
+				pDC->DrawText(strTemp, rectText, uiDTFlags);
+			}
+		}
 	}
 }
 //**********************************************************************************************
@@ -1859,6 +1885,12 @@ void CBCGPRecentFilesListBox::FillList(const CStringArray& arRecent, const CStri
 
 	BOOL bHasPinnedItems = FALSE;
 
+	if (m_bShowCaption)
+	{
+		AddCaption(m_strCaption);
+		m_arIcons.Add(NULL);
+	}
+
 	// Add "pinned" items first
 	for (i = 0; i < (int)arPinned.GetSize(); i++)
 	{
@@ -1958,6 +1990,7 @@ BOOL CBCGPRecentFilesListBox::CloseBackstageView()
 
 	return FALSE;
 }
+
 //***********************************************************************************************
 void CBCGPRecentFilesListBox::OnChooseRecentFile(UINT uiCmd)
 {

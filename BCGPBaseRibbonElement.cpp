@@ -100,6 +100,7 @@ void CBCGPRibbonSeparator::OnDraw (CDC* pDC)
 	if (m_bIsHoriz)
 	{
 		rect.top = rect.CenterPoint ().y;
+		//wlg rect.bottom = rect.top + 3;
 		rect.bottom = rect.top + 3;
 	}
 	else

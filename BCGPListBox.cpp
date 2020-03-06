@@ -755,7 +755,7 @@ void CBCGPListBox::OnDrawItemContent(CDC* pDC, CRect rect, int nIndex)
 			ctrl.m_bBackstageMode = m_bBackstageMode;
 
 			CRect rectSeparator = rect;
-			//rectSeparator.top = rect.CenterPoint().y + nTextHeight / 2;
+			//wlg rectSeparator.top = rect.CenterPoint().y + nTextHeight / 2;
 			rectSeparator.top = rectSeparator.bottom-2;
 			rectSeparator.bottom = rectSeparator.top + 1;
 			rectSeparator.right -= nHorzMargin + 1;

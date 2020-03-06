@@ -5102,7 +5102,6 @@ void CBCGPGridRow::Init ()
 	m_pParent = NULL;
 	m_bDestroySubItems = FALSE;
 	m_nMultiLineSubitemsCount = 0;
-
 	m_Rect.SetRectEmpty ();
 }
 //*******************************************************************************************
@@ -14388,7 +14387,9 @@ BOOL CBCGPGridCtrl::OnDrawItem (CDC* pDC, CBCGPGridRow* pItem)
 			rectLeftClip.left = bcgp_max (rectLeftClip.left, m_rectList.left);
 			rectLeftClip.bottom = bcgp_min (rectLeftClip.bottom + 1, m_rectList.bottom);
 
-			if (nColumn0Clip > 0 && (!m_bHighlightGroups || !bIsAutoGroup))
+			//wlg edit 
+			if (nColumn0Clip > 0 && (!m_bHighlightGroups || !pItem->IsGroup()))
+			//if (nColumn0Clip > 0 && (!m_bHighlightGroups || !bIsAutoGroup))
 			{
 				rectLeftClip.right = bcgp_min (rectLeftClip.right, nColumn0Clip);
 			}
@@ -14419,7 +14420,9 @@ BOOL CBCGPGridCtrl::OnDrawItem (CDC* pDC, CBCGPGridRow* pItem)
 				clrTextOld = pDC->SetTextColor (globalData.clrGrayedText);
 			}
 
-			if (!pItem->HasValueField () || pItem->IsGroup())
+			//wlg edit 
+			//if (!pItem->HasValueField () || bIsAutoGroup)
+			if (!pItem->HasValueField () || bIsAutoGroup || m_bHighlightGroups)
 			{
 				// fill group background
 				CRect rectFill = pItem->m_Rect;

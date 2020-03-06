@@ -973,7 +973,6 @@ protected:
 	BOOL			m_bAllowEdit;	// Is item editable?
 	BOOL			m_bBold;		// Is item should be drawn using bold font?
 	DWORD			m_dwFlags;		// Item flags
-
 	BOOL			m_bNameIsTrancated;
 
 	CBCGPGridRow*	m_pParent;		// Parent item (NULL for top-level items)
